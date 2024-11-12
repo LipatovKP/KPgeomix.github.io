@@ -544,6 +544,15 @@ body.active-menu {
     justify-content: space-between;
 }
 
+.ggis__title h2{
+    margin-top: 80px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
 .ggis__wrapper {
     display: flex;
     flex-direction: row;
@@ -626,12 +635,46 @@ body.active-menu {
     position: relative;
 }
 
+.techSupport__title h2{
+    margin-top: 80px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
+.techSupport__wrapper {
+    margin-top: 60px;
+}
+
+.techSupport__wrapper__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60%;
+}
+
+.techSupport__wrapper__content p {
+    flex: 1;
+    text-shadow: 2px 2px 10px #fff;
+}
+
+.techSupport__wrapper__slider .swiper {
+    max-width: 100%;
+    padding: 0 100px;
+}
+
 
 .techSupport__wrapper__slider .swiper-slide {
     background: radial-gradient(44.63% 45.59% at 40.31% 23.77%, rgba(3, 6, 66, 0) 0%, rgba(76, 163, 236, 0.92) 100%);
@@ -654,16 +697,48 @@ body.active-menu {
     margin-bottom: 10px;
 }
 
-.swiper-pagination {
-    position: absolute;
-    text-align: center;
-    transition: .3s opacity;
-    transform: translate3d(0, 0, 0);
-    z-index: 10;
+.techSupport__wrapper__slider .swiper-slide img {
+    width: 40px;
+    height: max-content;
 }
+
+.techSupport__wrapper__slider .swiper-slide span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: none;
+    letter-spacing: 0.20px;
+}
+
+.techSupport__wrapper__slider .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.techSupport__wrapper__slider .swiper-pagination-bullet-active {
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+
 /* techSupport style */
 
+/* training style */
 
+.training__layout{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* training style end */
 
 
 
