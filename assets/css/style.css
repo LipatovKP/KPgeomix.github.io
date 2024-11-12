@@ -554,265 +554,114 @@ body.active-menu {
     width: 50%;
 }
 
-.ggis__row {
-    display: inline-block;
-    text-align: center;
-    padding: 5px 20px;
-    color: black;
-    transition: background 0.3s, color 0.3s;
-    margin: 5px;
-
-    .ggis__row a:hover {
-        background: linear-gradient(to right, #00327C, #8CC5F1);
-        border-radius: 20px;
-        border-color: white;
-        color: white;
-    }
-
-    img {
-        width: 42px;
-        height: 42px;
-    }
+.ggis__img img{
+    margin-top: -240px;
 }
-    /* ggis style end*/
+
+.ggis__row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.5s;
+}
+
+.ggis__row:hover {
+    background: linear-gradient(to right, #00327C, #8CC5F1);
+    border-radius: 20px;
+    color: white;
+}
+
+.ggis__row span{
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 86.7px;
+    margin-right: 10px;
+    color: #00327C;
+    transition: color 0.5s;
+}
+
+.ggis__row:hover span {
+    color: white;
+}
+
+.ggis__row a{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40.46px;
+    text-align: left;
+    flex-grow: 1;
+    color: inherit;
+}
+
+.link__grid{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.btn__knowbase{
+    margin-top: 40px;
+    width: 250px;
+    height: 61px;
+    background: linear-gradient(to right, #00327C, #8CC5F1);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+}
+
+.ggis__row img {
+    width: 42px;
+    height: 42px;
+}
+
+/* ggis style end*/
 
 
-    /* techSupport style */
+/* techSupport style */
 
-    .techSupport__layout {
-        padding-top: 140px;
+.techSupport__layout {
+    margin-top: 140px;
+    position: relative;
+}
 
-        position: relative;
-    }
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .techSupport__wrapper {
-        margin-top: 60px;
-        /* margin-bottom: 300px; */
-    }
+.techSupport__wrapper__slider .swiper-slide {
+    background: radial-gradient(44.63% 45.59% at 40.31% 23.77%, rgba(3, 6, 66, 0) 0%, rgba(76, 163, 236, 0.92) 100%);
+    box-shadow: -5px -5px 250px rgba(255, 255, 255, 0.02) inset;
+    border: white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 20px 30px;
 
-    .techSupport__wrapper__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    height: 220px;
 
-        margin-bottom: 60%;
-        /* margin-top: 650px; */
-    }
+}
 
-    .techSupport__wrapper__content p {
-        flex: 1;
-        text-shadow: 2px 2px 10px #fff;
-    }
+.swiper-slide img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
 
-    .techSupport__wrapper__content p:first-child {
-        color: #14161A;
-        font-size: 2.5rem;
-        font-weight: 300;
-        line-height: 42px;
-        letter-spacing: 0.42px;
-
-        max-width: 670px;
-    }
-
-    .techSupport__wrapper__content p:last-child {
-        color: #14161A;
-        font-size: 1.5rem;
-        font-weight: 400;
-
-        max-width: 600px;
-        /* margin-left: -5550px; */
-    }
-
-    .techSupport__wrapper__slider {
-        margin-top: -30%;
-    }
-
-    .techSupport__wrapper__slider .swiper {
-        max-width: 100%;
-        padding: 0 100px;
-    }
-
-    .techSupport__wrapper__slider .swiper-wrapper {
-        align-items: center;
-    }
-
-    .techSupport__wrapper__slider .swiper-pagination {
-        width: 100%;
-    }
-
-    .techSupport__wrapper__slider .swiper-slide {
-        background: radial-gradient(44.63% 45.59% at 40.31% 23.77%, rgba(3, 6, 66, 0) 0%, #65499B 100%);
-        box-shadow: -5px -5px 250px rgba(255, 255, 255, 0.02) inset;
-        border-radius: 20px;
-        backdrop-filter: blur(20px);
-        padding: 20px 30px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 24px;
-
-        height: 250px;
-    }
-
-    .techSupport__wrapper__slider .swiper-slide img {
-        width: 40px;
-        height: max-content;
-    }
-
-    .techSupport__wrapper__slider .swiper-slide span {
-        color: white;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 24px;
-        text-transform: none;
-        letter-spacing: 0.20px;
-    }
-
-    .techSupport__layout__img {
-        position: absolute;
-        z-index: -1;
-
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-
-        height: 100%;
-    }
-
-    .techSupport__wrapper__slider .swiper-button-prev {
-        background: #14161A;
-        box-shadow: 5px 5px 14.699999809265137px rgba(101, 73, 155, 0.50);
-        color: #fff;
-    }
-
-    .techSupport__wrapper__slider .swiper-button-next {
-        background: #14161A;
-        box-shadow: 5px 5px 14.699999809265137px rgba(101, 73, 155, 0.50);
-        color: #fff;
-    }
-
-    .techSupport__wrapper__slider .swiper-pagination-bullet {
-        background: transparent;
-        border: 1px solid #fff;
-        opacity: 1;
-        width: 15px;
-        height: 15px;
-    }
-
-    .techSupport__wrapper__slider .swiper-pagination-bullet-active {
-        background: #fff;
-        border: 1px solid transparent;
-    }
-
-    @media (max-width: 1441px) {
-        .techSupport__wrapper__slider .swiper {
-            padding: 0 80px;
-        }
-    }
-
-    @media (max-width: 1170px) {
-        .techSupport__wrapper__slider .swiper-slide {
-            gap: 12px;
-        }
-
-        .techSupport__wrapper__slider .swiper-slide span {
-            font-size: 14px;
-        }
-    }
-
-    @media (max-width: 1000px) {
-        .techSupport__wrapper__slider {
-            margin-top: 0;
-        }
-
-        .techSupport__wrapper__content p:first-child {
-            font-size: 2.2rem;
-        }
-
-        .techSupport__wrapper__content p:last-child {
-            font-size: 1.2rem;
-        }
-
-        .techSupport__wrapper__content {
-            margin-bottom: 10%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .techSupport__wrapper__slider .swiper {
-            padding: 0 1px;
-        }
-
-        .techSupport__wrapper__content p:first-child {
-            font-size: 2rem;
-        }
-
-        .techSupport__wrapper__content p:last-child {
-            font-size: 1rem;
-        }
-
-        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-            bottom: 15%;
-        }
-
-        .techSupport__wrapper .swiper-button-next, .techSupport__wrapper .swiper-button-prev {
-            top: 78%;
-        }
-
-        .techSupport__wrapper .swiper-button-next, .techSupport__wrapper .swiper-button-prev {
-            top: 78%;
-        }
-
-        .techSupport__wrapper__content {
-            margin-bottom: 20%;
-        }
-
-        .techSupport__wrapper__content {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .techSupport__wrapper {
-            margin-top: 0;
-        }
-
-        .techSupport__wrapper__content {
-            gap: 12px;
-        }
-
-        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-            bottom: 20%;
-        }
-
-        .techSupport__wrapper .swiper-button-next, .techSupport__wrapper .swiper-button-prev {
-            top: 75%;
-        }
-
-        .techSupport__wrapper .swiper-button-next, .techSupport__wrapper .swiper-button-prev {
-            top: 75%;
-        }
-    }
-
-    @media (max-width: 450px) {
-        .techSupport__wrapper__content {
-            margin-bottom: 40%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .techSupport__wrapper__slider .swiper-slide {
-            padding: 20px 10px;
-        }
-    }
-
-    /* techSupport style */
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+/* techSupport style */
 
 
 
@@ -1266,6 +1115,6 @@ body.active-menu {
             gap: 20px;
         }
     }
-}
+
 
 /* footer style */
