@@ -22,7 +22,7 @@ const headerMenu = () => {
 };
 
 const sliderBanner = () => {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.banner__wrapper__row', {
         direction: 'horizontal',
         loop: true,  
         pagination: {
@@ -89,19 +89,36 @@ const sliderDecisions = () => {
     });
 }
 
-const swiper = new Swiper('.techSupport', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+
+const consultationSwiper = new Swiper('.consultation-swiper', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    loop: true,
+
 });
+
+const techSupport = new Swiper('.techSupport', {
+    slidesPerView: 3,
+    spaceBetween: 60,
+    slidesPerGroup: 2,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
+
+
+
 
 const tabs = () => {
     const tabsEl = document.querySelectorAll(".product__column__header");
