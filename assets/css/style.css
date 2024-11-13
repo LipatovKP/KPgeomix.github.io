@@ -813,9 +813,9 @@ body.active-menu {
 
 .gradient__background {
     display: grid;
-    grid-template-rows: auto; /* Автоматическая высота для каждой секции */
+    grid-template-rows: auto;
     background: linear-gradient(180deg, #FFFFFF 46.02%, #4E79CA 60.06%, #00327C 70.85%, #091823 80.88%, #14161A 100%);
-    padding: 50px 0; /* Отступы для контейнера */
+    padding: 50px 0;
 }
 
 .form__wrapper {
