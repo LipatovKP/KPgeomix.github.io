@@ -35,61 +35,61 @@ const sliderBanner = () => {
     });
 };
 
-// const sliderDecisions = () => {
-//     var swiper = new Swiper(".mySwiper", {
-//         slidesPerView: 3,
-//         spaceBetween: 100,
-//         watchOverflow: true,
-//         slidesPerGroup: 3,
-//         pagination: {
-//           el: ".swiper-pagination",
-//         },
-//         navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//         },
-//         breakpoints: {
-//             1441: {
-//                 slidesPerView: 3,
-//                 spaceBetween: 100,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 3,
-//             },
-//             1025: {
-//                 slidesPerView: 3,
-//                 spaceBetween: 80,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 3,
-//             },
-//             769: {
-//                 slidesPerView: 2,
-//                 spaceBetween: 80,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 2,
-//             },
-//             500: {
-//                 slidesPerView: 1,
-//                 spaceBetween: 80,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 1,
-//             },
-//             375: {
-//                 slidesPerView: 1,
-//                 spaceBetween: 80,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 1,
-//             },
-//             350: {
-//                 slidesPerView: 1,
-//                 spaceBetween: 80,
-//                 watchOverflow: true,
-//                 slidesPerGroup: 1,
-//             },
-//         }
-//     });
-// }
+const sliderDecisions = () => {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 100,
+        watchOverflow: true,
+        slidesPerGroup: 3,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1441: {
+                slidesPerView: 3,
+                spaceBetween: 100,
+                watchOverflow: true,
+                slidesPerGroup: 3,
+            },
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 80,
+                watchOverflow: true,
+                slidesPerGroup: 3,
+            },
+            769: {
+                slidesPerView: 2,
+                spaceBetween: 80,
+                watchOverflow: true,
+                slidesPerGroup: 2,
+            },
+            500: {
+                slidesPerView: 1,
+                spaceBetween: 80,
+                watchOverflow: true,
+                slidesPerGroup: 1,
+            },
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 80,
+                watchOverflow: true,
+                slidesPerGroup: 1,
+            },
+            350: {
+                slidesPerView: 1,
+                spaceBetween: 80,
+                watchOverflow: true,
+                slidesPerGroup: 1,
+            },
+        }
+    });
+}
 
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.techSupport', {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -104,8 +104,8 @@ const swiper = new Swiper('.mySwiper', {
 });
 
 const tabs = () => {
-    const tabsEl = document.querySelectorAll(".ggis__column");
-    const tabContentsEl = document.querySelectorAll(".ggis__tab");
+    const tabsEl = document.querySelectorAll(".product__column__header");
+    const tabContentsEl = document.querySelectorAll(".product__tab");
 
     tabsEl.forEach((tabEl, index) => {
         tabEl.addEventListener("click", () => {
