@@ -110,11 +110,11 @@ const techSupport = new Swiper('.techSupport', {
     spaceBetween: 60,
     slidesPerGroup: 2,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.techSupport__pagination',
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.techSupport__next',
+        prevEl: '.techSupport__prev',
     },
 
 });
