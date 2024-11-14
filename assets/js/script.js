@@ -91,7 +91,8 @@ const sliderDecisions = () => {
 
 
 const consultationSwiper = new Swiper('.consultation-swiper', {
-    slidesPerView: 1,
+    slidesPerView: 2,
+    spaceBetween: 10,
     slidesPerGroup: 1,
     pagination: {
         el: '.swiper-pagination',
