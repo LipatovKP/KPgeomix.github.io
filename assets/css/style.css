@@ -1965,8 +1965,9 @@ hr.active {
     flex-direction: column;
     text-align: center;
     width: 1080px;
-    height: 727px;
+    height: 750px;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .swiper__slide__card{
@@ -2014,18 +2015,18 @@ hr.active {
     span{
         font-size: 28px;
         font-weight: 600;
-        line-height: 33.6px;
+        line-height: 34px;
         text-align: left;
     }
 
     ul {
-        margin-top: 40px;
+        margin: 0;
         list-style-image: url('/assets/img/icons/star.svg');
         padding-left: 20px;
     }
 
     li {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
 }
@@ -2059,6 +2060,10 @@ hr.active {
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
+    }
+
+    ul {
+        list-style-image: url('/assets/img/icons/star_white.svg');
     }
 }
 
