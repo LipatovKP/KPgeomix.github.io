@@ -382,7 +382,6 @@ body.active-menu {
 
 .banner-layout {
     margin-top: 131px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -424,9 +423,9 @@ body.active-menu {
     width: 60px;
     height: 60px;
     background: white;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     border-radius: 50px;
 }
 
@@ -1966,7 +1965,7 @@ hr.active {
     flex-direction: column;
     text-align: center;
     width: 1080px;
-    height: 827px;
+    height: 727px;
     max-width: 100%;
 }
 
@@ -2023,6 +2022,33 @@ hr.active {
     li {
         margin: 20px 0;
     }
+
+}
+
+.consultation__wrapper__footer {
+    margin-top: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.consultation__button__prev, .consultation__button__next {
+    width: 60px;
+    height: 60px;
+    background: white;
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    border-radius: 50px;
+}
+
+.consultation__pagination .swiper-pagination-bullet{
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
 
 }
 
