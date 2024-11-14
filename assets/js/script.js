@@ -91,15 +91,16 @@ const sliderDecisions = () => {
 
 
 const consultationSwiper = new Swiper('.consultation-swiper', {
+    direction: 'horizontal',
     slidesPerView: 2,
     spaceBetween: 10,
     slidesPerGroup: 1,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.consultation__pagination',
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.consultation__button__next',
+        prevEl: '.consultation__button__prev',
     },
 
 });

@@ -1979,15 +1979,7 @@ hr.active {
     gap: 20px;
     border: 1px solid black;
     border-radius: 20px;
-
-    .swiper__slide__card__item{
-        display: flex;
-        flex-direction: row;
-        width:450px;
-        height: 35px;
-        gap: 98px;
-        margin-bottom: 20px;
-    }
+    overflow: hidden;
 
     .swiper__slide__card__item img{
         width:35px;
@@ -2025,12 +2017,25 @@ hr.active {
 
 }
 
-.consultation__wrapper__footer {
-    margin-top: 50px;
-    transform: translateY(-50%);
+.swiper__slide__card__item{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width:450px;
+    height: 35px;
+    gap: 98px;
+    margin-bottom: 20px;
+}
+
+.swiper__slide__card--dark{
+    background-color: #000;
+}
+
+.consultation__wrapper__footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    transform: translateY(-50%);
+
 }
 
 .consultation__button__prev, .consultation__button__next {
@@ -2043,13 +2048,21 @@ hr.active {
     border-radius: 50px;
 }
 
-.consultation__pagination .swiper-pagination-bullet{
+.consultation__wrapper__footer .swiper-pagination-bullet {
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #2C508C;
     opacity: 1;
     width: 15px;
     height: 15px;
+}
 
+.consultation__wrapper__footer .consultation__pagination {
+    width: 100%;
+}
+
+.consultation__wrapper__footer .swiper-pagination-bullet-active {
+    background: #2C508C;
+    border: 1px solid transparent;
 }
 
 /* consultation style end*/
