@@ -1980,6 +1980,9 @@ hr.active {
     border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
+    /*background: linear-gradient(145.39deg, rgba(255, 255, 255, 0.1) 18.95%, rgba(44, 80, 140, 0.1) 135.62%);*/
+    background-image: url('/assets/img/Mask group__card1.png');
+    background-repeat: no-repeat;
 
     .swiper__slide__card__item img{
         width:35px;
@@ -2027,8 +2030,11 @@ hr.active {
 }
 
 .swiper__slide__card--dark{
-    background-color: #000;
+    background: #030642 url('/assets/img/Mask group__card2.png') no-repeat top right;
 }
+
+
+
 
 .consultation__wrapper__footer {
     display: flex;
@@ -2057,6 +2063,8 @@ hr.active {
 }
 
 .consultation__wrapper__footer .consultation__pagination {
+    position: absolute;
+    top: 10px;
     width: 100%;
 }
 
