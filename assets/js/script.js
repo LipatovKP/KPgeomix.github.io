@@ -91,9 +91,7 @@ const sliderDecisions = () => {
 
 
 
-
-
-// Выбор слайдера на Услугах
+/* Слайдеры на Услугах */
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll(".consultation__link a");
 
@@ -179,6 +177,8 @@ const techSupport = new Swiper('.techSupport', {
     },
 
 });
+
+/* Слайдеры на услугах конец */
 
 
 const tabs = () => {

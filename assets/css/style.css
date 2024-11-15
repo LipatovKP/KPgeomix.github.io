@@ -1958,7 +1958,6 @@ hr.active {
     border-color: white;
     color: white;
 }
-
 /*.consultation__link a.active {*/
 /*    background: linear-gradient(to right, #00327C, #8CC5F1);*/
 /*    border-color: white;*/
@@ -2003,24 +2002,6 @@ hr.active {
             url('/assets/img/Mask group__card1.png');
     background-repeat: no-repeat;
 
-    .swiper__slide__card__item img{
-        width:35px;
-        height: 35px;
-    }
-
-    .swiper__slide__card__item a{
-        display: inline-block;
-        padding: 5px 10px;
-        text-align: center;
-        color: black;
-        border-radius: 50px;
-        border: 1px solid black;
-        font-size: 18px;
-        font-weight: 400;
-        background: linear-gradient(145.39deg, rgba(255, 255, 255, 0.1) 18.95%, rgba(44, 80, 140, 0.1) 135.62%);
-
-    }
-
     span{
         font-size: 28px;
         font-weight: 600;
@@ -2044,9 +2025,21 @@ hr.active {
     display: flex;
     flex-direction: row;
     width:450px;
-    height: 35px;
+    height: auto;
     gap: 98px;
     margin-bottom: 20px;
+}
+
+.swiper__slide__card__item a{
+    display: flex;
+    padding: 5px 10px;
+    text-align: center;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(145.39deg, rgba(255, 255, 255, 0.1) 18.95%, rgba(44, 80, 140, 0.1) 135.62%);
 }
 
 .swiper__slide__card--dark{
@@ -2059,16 +2052,8 @@ hr.active {
     color: white;
     background: #030642 url('/assets/img/Mask group__card2.png') no-repeat top right;
 
-    .swiper__slide__card__item a{
-        display: inline-block;
-        padding: 5px 10px;
-        text-align: center;
-        color: #FFFFFF;
-        border-radius: 50px;
-        border: 1px solid white;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
+    a{
+        color: white;
     }
 
     ul {
