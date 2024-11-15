@@ -90,7 +90,68 @@ const sliderDecisions = () => {
 }
 
 
-const consultationSwiper = new Swiper('.consultation-swiper', {
+
+
+
+// Выбор слайдера на Услугах
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".consultation__link a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("data-target");
+
+            document.querySelectorAll(".consultation__wrapper__row").forEach(swiper => {
+                swiper.classList.remove("active");
+            });
+
+            const targetSwiper = document.getElementById(targetId);
+            if (targetSwiper) {
+                targetSwiper.classList.add("active");
+            }
+
+            links.forEach(link => {
+                link.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+    });
+});
+
+const consultationSwiper = () => {
+    const consultationSwiper = new Swiper('.consultation-swiper', {
+        direction: 'horizontal',
+        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.consultation__pagination',
+        },
+        navigation: {
+            nextEl: '.consultation__button__next',
+            prevEl: '.consultation__button__prev',
+        },
+    });
+};
+
+const consultationSwiperIntegration = new Swiper('.consultation-swiper-integration', {
+    direction: 'horizontal',
+    slidesPerView: 2,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.consultation__pagination',
+    },
+    navigation: {
+        nextEl: '.consultation__button__next',
+        prevEl: '.consultation__button__prev',
+    },
+
+});
+
+const consultationSwiperEconomy = new Swiper('.consultation-swiper-economy', {
     direction: 'horizontal',
     slidesPerView: 2,
     spaceBetween: 10,
@@ -118,8 +179,6 @@ const techSupport = new Swiper('.techSupport', {
     },
 
 });
-
-
 
 
 const tabs = () => {
@@ -150,6 +209,7 @@ const tabs = () => {
 const init = () => {
     headerMenu()
     sliderBanner()
+    consultationSwiper()
     tabs()
     sliderDecisions()
 };
