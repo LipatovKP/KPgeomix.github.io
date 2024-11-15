@@ -2139,12 +2139,15 @@ hr.active {
     align-items: center;
     padding: 10px;
     transition: background 0.5s;
+    border-bottom: 1px solid #14161A;
 }
 
 .ggis__row:hover {
     background: linear-gradient(to right, #00327C, #8CC5F1);
     border-radius: 20px;
     color: white;
+    padding: 20px;
+    border-top: 2px solid white;
 }
 
 .ggis__row span{
