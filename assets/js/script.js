@@ -36,7 +36,7 @@ const sliderBanner = () => {
 };
 
 const sliderDecisions = () => {
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 100,
         watchOverflow: true,
@@ -132,9 +132,27 @@ const consultationSwiper = () => {
             prevEl: '.consultation__button__prev',
         },
         breakpoints: {
+            1440: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
             768: {
                 slidesPerView: 1.5,
                 spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            360: {
+                slidesPerView: 1,
                 slidesPerGroup: 1,
             },
         },

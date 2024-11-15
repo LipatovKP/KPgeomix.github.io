@@ -2157,7 +2157,7 @@ hr.active {
 @media (max-width: 1000px) {
 
     .consultation__wrapper__left{
-        width: 50%;
+        width: 970px;
         flex-direction: row;
     }
 
@@ -2199,6 +2199,15 @@ hr.active {
 
 @media (max-width: 768px) {
 
+    .consultation__wrapper__left{
+        width: 50%;
+    }
+
+    .consultation__title h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
     .consultation__wrapper__left p{
         font-size: 26px;
         font-weight: 300;
@@ -2221,14 +2230,102 @@ hr.active {
 
 @media (max-width: 480px) {
 
+    .consultation__layout{
+        flex-direction: column;
+    }
 
+    .consultation__wrapper__right{
+        width: 444px;
+    }
+    .consultation__wrapper__left{
+        width: 480px;
+        flex-direction: column;
+    }
 
+    .consultation__wrapper__left p{
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 26px;
+        width: 440px;
+        margin-bottom: -90px;
+    }
+
+    .consultation__title h2{
+        margin-top: -15px;
+        margin-bottom: -30px;
+        font-size: 32px;
+        line-height: 32px;
+
+    }
+
+    .consultation__wrapper__row.active{
+        width: 444px;
+    }
+
+    .consultation__link{
+        margin-left: -4px;
+        margin-bottom: 10px;
+        width: 444px;
+
+        a{
+            width: 100%;
+        }
+    }
+
+    .swiper__slide__card__item {
+        gap: 47px;
+    }
 }
 
 @media (max-width: 360px) {
 
+    .consultation__wrapper__right{
+        width: 350px;
+    }
+    .consultation__wrapper__left{
+        width: 360px;
+        flex-direction: column;
+    }
 
+    .consultation__wrapper__left p{
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 26px;
+        width: 340px;
+        margin-bottom: -55px;
+    }
+
+    .consultation__title h2{
+        display: table-caption;
+        font-size: 32px;
+        line-height: 38px;
+
+    }
+
+    .consultation__wrapper__row.active{
+        width: 344px;
+    }
+
+    .consultation__link{
+        margin-left: -4px;
+        margin-bottom: 10px;
+        width: 344px;
+
+        a{
+            width: 100%;
+        }
+    }
+
+    .swiper__slide__card__item {
+        display: grid;
+        gap: 20px;
+    }
+
+    .swiper__slide__card {
+        padding: 20px;
+    }
 }
+
 
 /* consultation style end*/
 
@@ -2326,6 +2423,25 @@ hr.active {
     color: white;
 }
 
+@media (max-width: 1000px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+@media (max-width: 360px) {
+
+
+}
 
 /* ggis style end*/
 
