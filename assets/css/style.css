@@ -2375,7 +2375,7 @@ hr.active {
     text-align: left;
     width: 531px;
     height: 122px;
-    border: 1px solid snow;
+    border: 1px solid #2C508C19;
     border-radius: 20px;
     box-sizing: border-box;
     background: linear-gradient(157.65deg, rgba(0, 0, 0, 0.1) 17.34%, rgba(44, 80, 140, 0.1) 153.86%);
@@ -2388,6 +2388,9 @@ hr.active {
     }
 }
 
+.training__item:hover{
+    border: 1px solid #8CC5F1FF;
+}
 
 
 .tr__number{
