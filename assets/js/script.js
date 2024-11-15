@@ -131,6 +131,13 @@ const consultationSwiper = () => {
             nextEl: '.consultation__button__next',
             prevEl: '.consultation__button__prev',
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+        },
     });
 };
 

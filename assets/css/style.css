@@ -2157,7 +2157,7 @@ hr.active {
 @media (max-width: 1000px) {
 
     .consultation__wrapper__left{
-        width: 970px;
+        width: 50%;
         flex-direction: row;
     }
 
@@ -2199,7 +2199,24 @@ hr.active {
 
 @media (max-width: 768px) {
 
+    .consultation__wrapper__left p{
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 26px;
+    }
 
+    .consultation__link{
+        margin-left: 0;
+        width: 403px;
+
+        a{
+            width: 383px;
+        }
+    }
+
+    .consultation__wrapper__row.active{
+        width: 768px;
+    }
 }
 
 @media (max-width: 480px) {
