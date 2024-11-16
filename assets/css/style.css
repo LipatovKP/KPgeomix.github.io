@@ -2369,6 +2369,10 @@ hr.active {
     border-bottom: 1px solid #14161A;
 }
 
+.ggis__row--bb{
+    border: none;
+}
+
 .ggis__row:hover {
     background: linear-gradient(to right, #00327C, #8CC5F1);
     border-radius: 20px;
@@ -2414,6 +2418,8 @@ hr.active {
     margin-top: 40px;
     width: 250px;
     height: 61px;
+    cursor: pointer;
+    border: none;
     background: linear-gradient(to right, #00327C, #8CC5F1);
     border-radius: 50px;
     font-size: 20px;
@@ -2422,24 +2428,141 @@ hr.active {
     color: white;
 }
 
-@media (max-width: 1000px) {
+.btn__knowbase:hover{
+    border: 1px solid #8CC5F1FF;
+}
 
+@media (max-width: 1000px) {
+    .ggis__title h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .ggis__column--left{
+        width: 548px;
+        margin-right: 30px;
+    }
+
+    .ggis__column--right{
+        width: 535px;
+    }
+
+    .ggis__row span{
+        font-size: 48px;
+        line-height: 69px;
+    }
+
+    .ggis__row a{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .ggis__img img{
+        margin-top: -109px;
+        margin-left: -97px;
+    }
+
+    .btn__knowbase{
+        height: 55px;
+    }
 
 }
 
 @media (max-width: 768px) {
 
+    .ggis__column--left{
+        width: 479px;
+        margin-right: 30px;
+    }
+
+    .ggis__column--right{
+        width: 346px;
+    }
+
+    .ggis__row span{
+        font-size: 38px;
+        line-height: 54px;
+    }
+
+    .ggis__row a{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .ggis__img img{
+        margin-top: -38px;
+        margin-left: -86px;
+    }
+
+    .btn__knowbase{
+        height: 50px;
+    }
 
 }
 
 @media (max-width: 480px) {
+    .ggis__wrapper{
+        flex-direction: column;
+    }
 
+    .ggis__title h2{
+        margin-bottom: -30px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .ggis__column--left{
+        width: 450px;
+        margin-right: 0;
+    }
+
+    .ggis__column--right{
+        width: 346px;
+    }
+
+    .ggis__img img{
+        width: 267px;
+        margin-top: -175px;
+        margin-left: 206px;
+    }
+
+    .btn__knowbase{
+        margin-top: 71px;
+        width: 210px;
+        height: 50px;
+    }
 
 }
 
 @media (max-width: 360px) {
 
+    .ggis__title h2{
+        width: 360px;
+        margin-bottom: -30px;
+        font-size: 32px;
+        line-height: 32px;
+    }
 
+    .ggis__column--left{
+        width: 340px;
+        margin-right: 0;
+    }
+
+    .ggis__column--right{
+        width: 340px;
+    }
+
+    .ggis__img img{
+        width: 288px;
+        margin-top: -22px;
+        margin-left: 0;
+    }
+
+    .btn__knowbase{
+        margin-top: 71px;
+        width: 99%;
+        height: 50px;
+    }
 }
 
 /* ggis style end*/
