@@ -2044,8 +2044,6 @@ hr.active {
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #14161A;
 
     border: 1px solid black;
@@ -2280,6 +2278,7 @@ hr.active {
 @media (max-width: 360px) {
 
     .consultation__wrapper__right{
+        margin-left: -9px;
         width: 350px;
     }
     .consultation__wrapper__left{
@@ -2307,12 +2306,12 @@ hr.active {
     }
 
     .consultation__link{
-        margin-left: -4px;
+        margin-left: -9px;
         margin-bottom: 10px;
         width: 344px;
 
         a{
-            width: 100%;
+            width: 98%;
         }
     }
 
