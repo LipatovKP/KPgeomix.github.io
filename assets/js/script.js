@@ -186,7 +186,6 @@ const consultationSwiperEconomy = new Swiper('.consultation-swiper-economy', {
         nextEl: '.consultation__button__next',
         prevEl: '.consultation__button__prev',
     },
-
 });
 
 const techSupport = new Swiper('.techSupport', {
@@ -200,7 +199,35 @@ const techSupport = new Swiper('.techSupport', {
         nextEl: '.techSupport__next',
         prevEl: '.techSupport__prev',
     },
-
+    breakpoints: {
+        1440: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+        },
+        1000: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween:20,
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            grid: {
+                rows: 2,
+                },
+        },
+        360: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            grid: {
+                rows: 2,
+            },
+        },
+    }
 });
 
 /* Слайдеры на услугах конец */
