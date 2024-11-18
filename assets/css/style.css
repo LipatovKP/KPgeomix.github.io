@@ -3147,6 +3147,43 @@ hr.active {
 
 /* training style end */
 
+/* about__company style */
+.about__company__cross .company__cross{
+    width: 175px;
+    height: 175px;
+    margin: auto;
+}
+
+/* about__company style end */
+
+/* licenses__and__certificates */
+.licenses__and__certificates__slider{
+    max-width: 1086px;
+    max-height: 951px;
+}
+
+.licenses__and__certificates__slider img{
+    max-width: 35px;
+
+}
+
+.licenses__achievements__img{
+    max-width: 235px;
+}
+
+.licenses__achievements__item{
+    max-width: 948px;
+}
+
+.achievements__item{
+    img{
+        width: 180px;
+        height: 68px;
+    }
+}
+
+/* licenses__and__certificates end */
+
 .gradient__background {
     width: 100%;
     height: 100%;

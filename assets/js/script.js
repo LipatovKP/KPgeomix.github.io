@@ -284,6 +284,40 @@ const techSupport = () =>{
 };
 /* Слайдеры на услугах конец */
 
+/*Слайдеры о нас */
+
+const licensesСertificates = () =>{
+    const licensesСertificates = new Swiper('.licenses-certificates', {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+
+    });
+};
+
+const achievementsSlider = () =>{
+    const achievementsSlider = new Swiper('.achievements-slider', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+
+    });
+};
+
+/*Слайдеры о нас конец */
 
 const tabs = () => {
     const tabsEl = document.querySelectorAll(".product__column__header");
@@ -314,6 +348,8 @@ const init = () => {
     headerMenu()
     sliderBanner()
     consultationSwiper()
+    licensesСertificates()
+    achievementsSlider()
     techSupport()
     tabs()
     sliderDecisions()
