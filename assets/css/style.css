@@ -2051,7 +2051,7 @@ hr.active {
     overflow: hidden;
     background:
             linear-gradient(145.39deg, rgba(255, 255, 255, 0.1) 18.95%, rgba(44, 80, 140, 0.1) 135.62%),
-            url('/assets/img/Mask group__card1.png') no-repeat top right;
+            url('../img/Mask_group__card1.png') no-repeat top right;
 
     span{
         font-size: 28px;
@@ -2062,7 +2062,7 @@ hr.active {
 
     ul {
         margin: 0;
-        list-style-image: url('/assets/img/icons/star.svg');
+        list-style-image: url('../img/icons/star.svg');
         padding-left: 20px;
     }
 
@@ -2102,14 +2102,14 @@ hr.active {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: white;
-    background: #030642 url('/assets/img/Mask group__card2.png') no-repeat top right;
+    background: #030642 url('../img/Mask_group__card2.png') no-repeat top right;
 
     a{
         color: white;
     }
 
     ul {
-        list-style-image: url('/assets/img/icons/star_white.svg');
+        list-style-image: url('../img/icons/star_white.svg');
     }
 }
 

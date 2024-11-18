@@ -255,7 +255,7 @@ const techSupport = () =>{
                 slidesPerGroup: 1,
             },
             1000: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 slidesPerGroup: 1,
             },
             768: {
@@ -265,6 +265,7 @@ const techSupport = () =>{
             },
             480: {
                 slidesPerView: 1,
+                spaceBetween: 0,
                 slidesPerGroup: 1,
                 grid: {
                     rows: 2,
@@ -272,6 +273,7 @@ const techSupport = () =>{
             },
             360: {
                 slidesPerView: 1,
+                spaceBetween: 0,
                 slidesPerGroup: 1,
                 grid: {
                     rows: 2,
