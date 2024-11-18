@@ -90,7 +90,6 @@ const sliderDecisions = () => {
 }
 
 
-
 /* Слайдеры на Услугах */
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll(".consultation__link a");
@@ -171,6 +170,31 @@ const consultationSwiperIntegration = new Swiper('.consultation-swiper-integrati
         nextEl: '.consultation__button__next',
         prevEl: '.consultation__button__prev',
     },
+    breakpoints: {
+        1440: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+        },
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+        },
+        768: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+        360: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+    },
 
 });
 
@@ -186,50 +210,76 @@ const consultationSwiperEconomy = new Swiper('.consultation-swiper-economy', {
         nextEl: '.consultation__button__next',
         prevEl: '.consultation__button__prev',
     },
-});
-
-const techSupport = new Swiper('.techSupport', {
-    slidesPerView: 3,
-    spaceBetween: 60,
-    slidesPerGroup: 2,
-    pagination: {
-        el: '.techSupport__pagination',
-    },
-    navigation: {
-        nextEl: '.techSupport__next',
-        prevEl: '.techSupport__prev',
-    },
     breakpoints: {
         1440: {
             slidesPerView: 2,
+            spaceBetween: 10,
             slidesPerGroup: 1,
         },
         1000: {
             slidesPerView: 2,
+            spaceBetween: 10,
             slidesPerGroup: 1,
         },
         768: {
-            slidesPerView: 2,
-            spaceBetween:20,
+            slidesPerView: 1.5,
+            spaceBetween: 10,
             slidesPerGroup: 1,
         },
         480: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            grid: {
-                rows: 2,
-                },
         },
         360: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            grid: {
-                rows: 2,
-            },
         },
-    }
+    },
 });
 
+const techSupport = () =>{
+    const techSupport = new Swiper('.techSupport', {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        slidesPerGroup: 2,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+        breakpoints: {
+            1440: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween:20,
+                slidesPerGroup: 1,
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                grid: {
+                    rows: 2,
+                    },
+            },
+            360: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                grid: {
+                    rows: 2,
+                },
+            },
+        }
+    });
+};
 /* Слайдеры на услугах конец */
 
 
@@ -262,6 +312,7 @@ const init = () => {
     headerMenu()
     sliderBanner()
     consultationSwiper()
+    techSupport()
     tabs()
     sliderDecisions()
 };

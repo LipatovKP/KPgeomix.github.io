@@ -2198,7 +2198,8 @@ hr.active {
 @media (max-width: 768px) {
 
     .consultation__wrapper__left{
-        width: 50%;
+        max-width: 754px;
+        justify-content: space-between;
     }
 
     .consultation__title h2{
@@ -2207,8 +2208,8 @@ hr.active {
     }
 
     .consultation__wrapper__left p{
+        width: 314px;
         font-size: 26px;
-        font-weight: 300;
         line-height: 26px;
     }
 
