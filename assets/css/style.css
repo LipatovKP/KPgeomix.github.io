@@ -2810,7 +2810,7 @@ hr.active {
         height: 10px;
     }
 
-    .swiper-grid-column>.swiper-wrapper{
+    .swiper-grid>.swiper-wrapper{
         flex-direction: row-reverse;
         justify-content: start;
     }
@@ -2864,12 +2864,6 @@ hr.active {
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 17px;
     }
-
-    .swiper-grid-column>.swiper-wrapper{
-        flex-direction: row-reverse;
-        justify-content: start;
-
-    }
 }
 
 
@@ -2894,13 +2888,13 @@ hr.active {
     color: white;
 }
 
-.training__wrapper__column{
+.training__wrapper__column__left, .training__wrapper__column__right{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.training__wrapper__column p{
+.training__wrapper__column__left p{
     width: 378px;
     height: 203px;
     top: 3718px;
@@ -2964,6 +2958,192 @@ hr.active {
     padding: 5px;
 }
 
+
+@media (max-width: 1000px) {
+    .training__layout{
+        margin-top: 40px;
+        max-width: 944px;
+        height: 380px;
+        margin-bottom: 0;
+    }
+
+    .training__title h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .training__wrapper__column__left p{
+        width: 336px;
+        height: 232px;
+    }
+
+    .training__wrapper__column__right{
+        max-width: 531px;
+        max-height: 380px;
+    }
+
+    .training__wrapper__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .training__item{
+        width: 531px;
+        height: 75px;
+        padding: 3px;
+    }
+
+    .tr__number{
+        font-size: 48px;
+        line-height: 69px;
+    }
+
+    .tr__txt{
+        font-size: 26px;
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 768px) {
+    .training__layout{
+        max-width: 728px;
+        height: 397px;
+    }
+
+    .training__wrapper__column__left p{
+        width: 335px;
+        height: 232px;
+    }
+
+    .training__wrapper__column__right{
+        max-width: 354px;
+        max-height: 380px;
+    }
+
+    .training__wrapper__grid {
+        grid-template-columns: 1fr;
+        max-height: 88px;
+        gap: 20px;
+    }
+
+    .training__item{
+        width: 354px;
+        max-height: 88px;
+        padding: 9px;
+    }
+
+    .tr__number{
+        font-size: 38px;
+        line-height: 54px;
+    }
+
+    .tr__txt{
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .training__layout{
+        margin-top: 40px;
+        max-width: 440px;
+        height: 677px;
+        flex-wrap: wrap;
+        margin-bottom: -165px;
+    }
+
+    .training__title h2{
+        margin-top: 80px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .training__wrapper__column__left{
+        height: 0;
+    }
+
+    .training__wrapper__column__right{
+        margin-top: -100px;
+    }
+
+    .training__wrapper__column__left p{
+        width: 382px;
+        height: 203px;
+    }
+
+    .training__wrapper__column__right{
+        max-width: 440px;
+        max-height: 380px;
+    }
+
+    .training__wrapper__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .training__item{
+        width: 440px;
+        height: 67px;
+        padding: 6px;
+    }
+
+    .tr__txt{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .training__layout{
+        max-width: 342px;
+        height: 624px;
+    }
+
+    .training__title h2{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .training__wrapper__column__right{
+        margin-top: -35px;
+    }
+
+    .training__wrapper__column__left p{
+        width: 342px;
+        height: 232px;
+    }
+
+    .training__wrapper__column__right{
+        max-width: 340px;
+        max-height: 380px;
+    }
+
+    .training__wrapper__grid {
+        grid-template-columns: 1fr;
+        max-height: 88px;
+        gap: 20px;
+    }
+
+    .training__item{
+        width: 340px;
+        max-height: 47px;
+        border-radius: 10px;
+        padding: 3px;
+        a{
+            display: contents;
+        }
+    }
+
+    .tr__txt{
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+}
 
 /* training style end */
 
