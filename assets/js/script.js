@@ -286,17 +286,17 @@ const techSupport = () =>{
 
 /*Слайдеры о нас */
 
-const licensesСertificates = () =>{
-    const licensesСertificates = new Swiper('.licenses-certificates', {
+const licensesCertificates = () =>{
+    const licensesCertificates = new Swiper('.licenses-certificates', {
         slidesPerView: 3,
         spaceBetween: 60,
-        slidesPerGroup: 1,
+        slidesPerGroup: 3,
         pagination: {
-            el: '.techSupport__pagination',
+            el: '.licenses__certificates__pagination',
         },
         navigation: {
-            nextEl: '.techSupport__next',
-            prevEl: '.techSupport__prev',
+            nextEl: '.licenses__certificates__next',
+            prevEl: '.licenses__certificates__prev',
         },
 
     });
@@ -307,11 +307,11 @@ const achievementsSlider = () =>{
         slidesPerView: 1,
         slidesPerGroup: 1,
         pagination: {
-            el: '.techSupport__pagination',
+            el: '.licenses__achievements__pagination',
         },
         navigation: {
-            nextEl: '.techSupport__next',
-            prevEl: '.techSupport__prev',
+            nextEl: '.licenses__achievements__next',
+            prevEl: '.licenses__achievements__prev',
         },
 
     });
@@ -394,7 +394,7 @@ const init = () => {
     headerMenu()
     sliderBanner()
     consultationSwiper()
-    licensesСertificates()
+    licensesCertificates()
     teamSwiper()
     historyDevelopment()
     ourClients()

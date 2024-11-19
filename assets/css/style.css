@@ -3305,30 +3305,225 @@ hr.active {
 /* about__company style end */
 
 /* licenses__and__certificates */
+
+.licenses__certificates__wrapper{
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.licenses__and__certificates__title{
+    margin-top: 140px;
+    width: 50%;
+
+    h2{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 63px;
+        letter-spacing: 0.02em;
+        color: #2C508C;
+    }
+}
+
+.licenses__certificates__text{
+    margin-top: 40px;
+    width: 55%;
+
+    p{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}
+
 .licenses__and__certificates__slider{
+    margin-top: 40px;
     max-width: 1086px;
     max-height: 951px;
 }
 
-.licenses__and__certificates__slider img{
-    max-width: 35px;
+.licenses__certificates__slide{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 388px;
+    height: 588px;
+    padding: 40px;
+    border: 1px solid #2C508C80;
+    border-radius: 30px;
+    background: linear-gradient(151.24deg, #00327C 0%, #8CC5F1 101.5%);
 
 }
 
-.licenses__achievements__img{
-    max-width: 235px;
+.licenses__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+
+    a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 5px 38px;
+        color: white;
+    }
+
+    img{
+        width: 20px;
+        object-fit: contain;
+    }
+}
+
+.licenses__logo__icon{
+    width: 100%;
+
+    img{
+        object-fit: contain;
+    }
+}
+
+.licenses__text__card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    img{
+        width: 20px;
+    }
+
+    span{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+}
+
+.licenses__certificates__footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.licenses__certificates__prev, .licenses__certificates__next{
+    position: inherit;
+}
+
+.licenses__certificates__footer .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #2C508C;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.licenses__certificates__footer .swiper-pagination-bullet-active {
+    background: #2C508C;
+    border: 1px solid transparent;
+}
+
+.licenses__certificates__footer .swiper-pagination {
+    width: 100%;
+}
+
+.licenses__achievements{
+    margin-top: 81px;
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+}
+
+.licenses__achievements__wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+    margin-top: 60px;
+    width: 70%;
+}
+
+.licenses__achievements__slider{
+    max-width: 801px;
+}
+
+.licenses__achievements__slide{
+    display: flex;
+    flex-direction: row;
+    gap: 69px;
+}
+
+.licenses__achievements__text{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    p{
+        margin-top: 40px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+}
+
+.licenses__achievements__footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.licenses__achievements__prev, .licenses__achievements__next{
+    position: inherit;
+}
+
+.licenses__achievements__footer .swiper-pagination {
+    position: relative;
+    top: 12px;
+    width: 100%;
+}
+
+.licenses__achievements__footer .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #2C508C;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.licenses__achievements__footer .swiper-pagination-bullet-active {
+    background: #2C508C;
+    border: 1px solid transparent;
 }
 
 .licenses__achievements__item{
-    max-width: 948px;
-}
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+    width: 70%;
 
-.achievements__item{
     img{
-        width: 180px;
-        height: 68px;
+        height: auto;
     }
 }
+
 
 /* licenses__and__certificates end */
 
