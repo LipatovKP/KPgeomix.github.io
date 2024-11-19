@@ -3148,10 +3148,158 @@ hr.active {
 /* training style end */
 
 /* about__company style */
-.about__company__cross .company__cross{
-    width: 175px;
-    height: 175px;
+
+.about__company__title h1{
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 52px;
+    color: #2C508C;
+    margin-bottom: 40px;
+}
+
+.about__company__wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about__company__text{
+    width: 58%;
+}
+
+.about__company__text__white{
+
+    p{
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+    }
+}
+
+.about__company__text__black{
+    margin-top: 60px;
+    padding: 60px 92px;
+    background: #00327C;
+    border-radius: 0 40px 40px 40px;
+
+    p{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 28px;
+        color: white;
+    }
+}
+
+.about__company__link{
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+    margin-top: 60px;
+
+    a{
+        width: 291px;
+        height: 54px;
+        text-align: center;
+        padding: 10px 20px;
+        gap: 10px;
+        border-radius: 50px;
+        border: 1px solid #8CC5F1FF;
+        color: black;
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    a:hover{
+        background: linear-gradient(90deg, #00327C 0%, #8CC5F1 100%);
+        color: white;
+    }
+}
+
+.about__company__cross{
+    margin-top: 80px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.company__cross__img{
+    width: 179px;
+    height: 179px;
     margin: auto;
+}
+
+.company__cross{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    gap: 131px;
+}
+
+.company__cross--play{
+    position: relative;
+    margin: auto;
+}
+.company__cross--play::before {
+    content: '';
+    position: absolute;
+    top: 41px;
+    right: 195px;
+    bottom: -17px;
+    left: -183px;
+    background-image: url(../img/geomix_gr_spot_2_2.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    margin: -536px;
+}
+
+.company__cross--left{
+    margin-right: -90px;
+}
+
+.company__cross__item{
+    width: 77%;
+
+    span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+}
+
+.about__company__quotes__title h2{
+    margin-top: 100px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.about__company__quotes{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    gap: 57px;
+}
+
+.company__quotes__item{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        font-size: 90px;
+        font-weight: 200;
+        line-height: 130px;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29px;
+    }
 }
 
 /* about__company style end */
@@ -3183,6 +3331,17 @@ hr.active {
 }
 
 /* licenses__and__certificates end */
+
+/* history__development */
+
+.history__development__cross img{
+    width: 175px;
+    height: 175px;
+    margin: auto;
+}
+
+
+/* history__development end */
 
 .gradient__background {
     width: 100%;

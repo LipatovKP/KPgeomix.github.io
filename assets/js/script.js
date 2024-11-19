@@ -317,6 +317,52 @@ const achievementsSlider = () =>{
     });
 };
 
+const ourClients = () =>{
+    const ourClients = new Swiper('.our-clients', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+
+    });
+};
+
+const teamSwiper = () =>{
+    const teamSwiper = new Swiper('.team-swiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+
+    });
+};
+
+const historyDevelopment = () =>{
+    const historyDevelopment = new Swiper('.history-development', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.techSupport__pagination',
+        },
+        navigation: {
+            nextEl: '.techSupport__next',
+            prevEl: '.techSupport__prev',
+        },
+
+    });
+};
+
+
 /*Слайдеры о нас конец */
 
 const tabs = () => {
@@ -349,6 +395,9 @@ const init = () => {
     sliderBanner()
     consultationSwiper()
     licensesСertificates()
+    teamSwiper()
+    historyDevelopment()
+    ourClients()
     achievementsSlider()
     techSupport()
     tabs()
