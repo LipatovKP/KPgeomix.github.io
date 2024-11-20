@@ -356,11 +356,10 @@ const historyDevelopment = () =>{
         pagination: {
             el: '.techSupport__pagination',
         },
-        navigation: {
-            nextEl: '.techSupport__next',
-            prevEl: '.techSupport__prev',
+        scrollbar: {
+          el: '.history__development__scrollbar',
+          draggable: true,
         },
-
     });
 };
 

@@ -3817,17 +3817,186 @@ hr.active {
 /* team end */
 
 
-
-
 /* history__development */
 
+#history__development{
+    margin-top: 140px;
+    width: 100%;
+    height: 1145px;
+    background:url("../img/history_development195.png") ;
+}
+
+.history__development__title{
+    padding: 159px 0;
+
+    h2{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 63px;
+        color: white;
+    }
+}
+
+.history__development__swiper{
+    margin: 0;
+    width: 70%;
+    height: 666px;
+}
+
+.history__development__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.history__development__slide{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.history__development__text{
+    width: 55%;
+    span{
+        font-size: 42px;
+        font-weight: 200;
+        line-height: 42px;
+        color: white;
+    }
+
+    p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+        color: white;
+    }
+}
+
+.history__development__cross{
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.history__development__cross__item{
+    width: 77%;
+
+    span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 29px;
+        color: white;
+    }
+}
+
+.history__cross{
+    display: flex;
+    flex-direction: column;
+    gap: 131px;
+}
+
+.history__cross--left{
+    margin-right: -90px;
+}
+
 .history__development__cross img{
-    width: 175px;
-    height: 175px;
+    width: 171px;
+    height: 168px;
     margin: auto;
 }
 
+
 /* history__development end */
+
+/* working universities */
+
+.working__universities__title{
+    margin-top: 140px;
+    h2{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 63px;
+        color: #2C508C;
+
+    }
+}
+
+.working__universities__text{
+    width: 52%;
+    margin-top: 60px;
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+}
+
+.working__universities__link{
+    margin-top: 40px;
+    width: 54%;
+}
+
+.working__universities__row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.5s;
+    border-bottom: 1px solid #14161A;
+}
+
+.working__universities__row--bb{
+    border: none;
+}
+
+.working__universities__row:hover {
+    background: linear-gradient(to right, #00327C, #8CC5F1);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    border-top: 2px solid white;
+}
+
+.working__universities__row span{
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 86.7px;
+    margin-right: 10px;
+    color: #00327C;
+    transition: color 0.5s;
+}
+
+.working__universities__row:hover span {
+    color: white;
+}
+
+.working__universities__row a{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    flex-grow: 1;
+    color: inherit;
+}
+
+.working__universities__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.working__universities__img{
+
+    img{
+        object-fit: contain;
+    }
+}
+
+/* working universities end */
+
+
 
 .gradient__background {
     width: 100%;
@@ -3848,6 +4017,19 @@ hr.active {
     background-color: #14161A;
     position: relative;
 }
+
+
+.form__about {
+    position: relative;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -1175px;
+    bottom: 0;
+    height: 100%;
+    margin-bottom: -1635px;
+}
+
 
 .form__wrapper {
     padding: 140px 0 0 0;
