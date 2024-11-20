@@ -335,14 +335,15 @@ const ourClients = () =>{
 
 const teamSwiper = () =>{
     const teamSwiper = new Swiper('.team-swiper', {
-        slidesPerView: 1,
+        slidesPerView: 3,
+        spaceBetween: 20,
         slidesPerGroup: 1,
         pagination: {
-            el: '.techSupport__pagination',
+            el: '.team__slider__pagination',
         },
         navigation: {
-            nextEl: '.techSupport__next',
-            prevEl: '.techSupport__prev',
+            nextEl: '.team__slider__next',
+            prevEl: '.team__slider__prev',
         },
 
     });

@@ -3673,8 +3673,151 @@ hr.active {
     color: white;
 }
 
-
 /* our clients end */
+
+/* team */
+
+.team__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.team__title{
+    margin-top: 140px;
+
+    h2{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 63px;
+        color: #2C508C;
+    }
+}
+
+.team__text{
+    margin-top: 50px;
+    width: 60%;
+    p{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}
+
+.team__slider{
+    margin-top: 60px;
+    width: 70%;
+    height: 703px;
+}
+
+.team__slider__slide{
+    width: 388px;
+    height: 603px;
+    padding: 40px;
+    border-radius: 30px;
+    background: linear-gradient(160.16deg, #00327C -6.64%, #8CC5F1 101.33%);
+
+    img{
+        margin-top: 40px;
+        max-width: 308px;
+        height: 300px;
+        border-radius: 20px;
+    }
+}
+
+.team__slide_head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    span{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 20px;
+        text-align: left;
+        color: white;
+    }
+
+    a{
+        width: 140px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 20px;
+        color: white;
+    }
+}
+
+.team__slide_bottom{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        color: white;
+    }
+
+    .post{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}
+
+.team__photo__gal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 70%;
+}
+
+.team__photo__it{
+    img{
+        object-fit: contain;
+    }
+}
+
+.team__slider__footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.team__slider__prev, .team__slider__next{
+    position: inherit;
+}
+
+.team__slider__footer .swiper-pagination {
+    position: relative;
+    top: 12px;
+    width: 100%;
+}
+
+.team__slider__footer .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #2C508C;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.team__slider__footer .swiper-pagination-bullet-active {
+    background: #2C508C;
+    border: 1px solid transparent;
+}
+/* team end */
+
+
+
 
 /* history__development */
 
