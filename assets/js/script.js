@@ -319,16 +319,17 @@ const achievementsSlider = () =>{
 
 const ourClients = () =>{
     const ourClients = new Swiper('.our-clients', {
-        slidesPerView: 1,
+        // direction: 'horizontal',
+        slidesPerView: 2,
+        spaceBetween:30,
         slidesPerGroup: 1,
         pagination: {
-            el: '.techSupport__pagination',
+            el: '.our__clients__pagination',
         },
         navigation: {
-            nextEl: '.techSupport__next',
-            prevEl: '.techSupport__prev',
+            nextEl: '.our__clients__next',
+            prevEl: '.our__clients__prev',
         },
-
     });
 };
 
