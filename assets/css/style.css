@@ -2007,16 +2007,16 @@ hr.active {
     margin: 5px;
 }
 
-.consultation__wrapper__left a:hover, a.active {
+.consultation__wrapper__left a:hover {
     background: linear-gradient(to right, #00327C, #8CC5F1);
     border-color: white;
     color: white;
 }
-/*.consultation__link a.active {*/
-/*    background: linear-gradient(to right, #00327C, #8CC5F1);*/
-/*    border-color: white;*/
-/*    color: white;*/
-/*}*/
+.consultation__link a.active {
+    background: linear-gradient(to right, #00327C, #8CC5F1);
+    border-color: white;
+    color: white;
+}
 
 .consultation__wrapper__row{
     display: none;
