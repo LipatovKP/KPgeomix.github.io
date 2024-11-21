@@ -3279,6 +3279,7 @@ hr.active {
 
 .about__company__quotes{
     margin-top: 60px;
+    margin-left: 0;
     display: flex;
     flex-direction: row;
     width: 65%;
@@ -3342,7 +3343,7 @@ hr.active {
     max-height: 951px;
 }
 
-.licenses__certificates__slide{
+.licenses__certificates__slide /*.swiper-slide*/{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -3352,7 +3353,12 @@ hr.active {
     border: 1px solid #2C508C80;
     border-radius: 30px;
     background: linear-gradient(151.24deg, #00327C 0%, #8CC5F1 101.5%);
+    transition: 0.5s;
+}
 
+.licenses__certificates__slide /*.swiper-slide-active*/{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .licenses__link{

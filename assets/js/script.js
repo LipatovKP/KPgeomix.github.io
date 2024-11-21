@@ -286,11 +286,26 @@ const techSupport = () =>{
 
 /*Слайдеры о нас */
 
+const numbersAndEvidence = () =>{
+    const numbersAndEvidence = new Swiper('.about-company-quotes', {
+        slidesPerView: 4,
+        spaceBetween: 60,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: {
+            delay: 0,
+        },
+        speed: 3500,
+    });
+};
+
 const licensesCertificates = () =>{
     const licensesCertificates = new Swiper('.licenses-certificates', {
         slidesPerView: 3,
         spaceBetween: 60,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
+        loop: true,
+        centeredSlides: true,
         pagination: {
             el: '.licenses__certificates__pagination',
         },
@@ -403,6 +418,7 @@ const init = () => {
     techSupport()
     tabs()
     sliderDecisions()
+    numbersAndEvidence()
 };
 
 document.addEventListener('DOMContentLoaded', init);
