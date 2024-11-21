@@ -3149,6 +3149,19 @@ hr.active {
 
 /* about__company style */
 
+.bg_two_stones{
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height: 1300px;
+    margin-bottom: 0;
+    object-fit: none;
+}
+
 .about__company__title h1{
     font-size: 52px;
     font-weight: 500;
@@ -3343,7 +3356,7 @@ hr.active {
     max-height: 951px;
 }
 
-.licenses__certificates__slide /*.swiper-slide*/{
+.licenses__certificates__slide.swiper-slide{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -3354,10 +3367,11 @@ hr.active {
     border-radius: 30px;
     background: linear-gradient(151.24deg, #00327C 0%, #8CC5F1 101.5%);
     transition: 0.5s;
+    transform: scale(0.8);
 }
 
-.licenses__certificates__slide /*.swiper-slide-active*/{
-    transform: scale(1.2);
+.licenses__certificates__slide.swiper-slide-active{
+    transform: scale(1);
     transition: 0.5s;
 }
 
@@ -3715,12 +3729,14 @@ hr.active {
     height: 703px;
 }
 
-.team__slider__slide{
+.team__slider__slide.swiper-slide{
     width: 388px;
     height: 603px;
     padding: 40px;
     border-radius: 30px;
     background: linear-gradient(160.16deg, #00327C -6.64%, #8CC5F1 101.33%);
+    transform: scale(0.8);
+    transition: 0.5s;
 
     img{
         margin-top: 40px;
@@ -3728,6 +3744,11 @@ hr.active {
         height: 300px;
         border-radius: 20px;
     }
+}
+
+.team__slider__slide.swiper-slide-active{
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .team__slide_head{

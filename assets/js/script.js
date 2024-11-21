@@ -302,7 +302,6 @@ const numbersAndEvidence = () =>{
 const licensesCertificates = () =>{
     const licensesCertificates = new Swiper('.licenses-certificates', {
         slidesPerView: 3,
-        spaceBetween: 60,
         slidesPerGroup: 1,
         loop: true,
         centeredSlides: true,
@@ -351,8 +350,9 @@ const ourClients = () =>{
 const teamSwiper = () =>{
     const teamSwiper = new Swiper('.team-swiper', {
         slidesPerView: 3,
-        spaceBetween: 20,
         slidesPerGroup: 1,
+        loop: true,
+        centeredSlides: true,
         pagination: {
             el: '.team__slider__pagination',
         },
