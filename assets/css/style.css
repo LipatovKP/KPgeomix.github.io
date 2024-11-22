@@ -3759,9 +3759,9 @@ hr.active {
 
 /* team */
 
-#team{
-
-}
+/*#team{*/
+/*    background: url('../img/Rectangle__M.png') no-repeat right top;*/
+/*}*/
 
 .team__wrapper{
     display: flex;
@@ -3912,11 +3912,14 @@ hr.active {
 
 /* history__development */
 
+
+
 #history__development{
     margin-top: 140px;
     width: 100%;
     max-height: 1145px;
-    background:url("../img/history_development195.png") ;
+    background:url("../img/history_development195.png");
+
 }
 
 .history__development__title{
