@@ -381,7 +381,7 @@ body.active-menu {
 }
 
 .banner-layout {
-    margin-top: 131px;
+    margin-top: -100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -749,10 +749,23 @@ body.active-menu {
 }
 
 .product__header__el a {
-    color: #2C508C;
+    /*color: #2C508C;*/
+    color: #9EA1A3;
     font-size: 0.8rem;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.product__column__header.active:last-child .product__header__el a {
+    color: #65499B;
+}
+
+.product__column__header.active:last-child .product__header__el path {
+    fill: #65499B;
+}
+
+.link__blue.act{
+    color:  #2C508C;
 }
 
 .product__header__el span {
@@ -2012,6 +2025,7 @@ hr.active {
     border-color: white;
     color: white;
 }
+
 .consultation__link a.active {
     background: linear-gradient(to right, #00327C, #8CC5F1);
     border-color: white;
