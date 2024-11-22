@@ -335,7 +335,7 @@ const ourClients = () =>{
     const ourClients = new Swiper('.our-clients', {
         // direction: 'horizontal',
         slidesPerView: 2,
-        spaceBetween:30,
+        spaceBetween: 10,
         slidesPerGroup: 1,
         pagination: {
             el: '.our__clients__pagination',
