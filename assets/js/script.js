@@ -384,6 +384,7 @@ const historyDevelopment = () =>{
 const tabs = () => {
     const tabsEl = document.querySelectorAll(".product__column__header");
     const tabContentsEl = document.querySelectorAll(".product__tab");
+    const starTextEl = document.querySelectorAll(".link__blue");
 
     tabsEl.forEach((tabEl, index) => {
         tabEl.addEventListener("click", () => {
@@ -395,6 +396,12 @@ const tabs = () => {
             // Добавляем класс "active" к текущему заголовку вкладки
             tabEl.classList.add("active");
 
+            starTextEl.forEach((content) => {
+                content.classList.remove("act");
+            });
+            starTextEl[index].classList.add("act");
+
+
             // Удаляем класс "active" у всех содержимых вкладок
             tabContentsEl.forEach((content) => {
                 content.classList.remove("active");
@@ -402,6 +409,7 @@ const tabs = () => {
             
             // Добавляем класс "active" только к соответствующему содержимому вкладки
             tabContentsEl[index].classList.add("active");
+
         });
     });
 };
