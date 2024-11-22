@@ -496,7 +496,7 @@ body.active-menu {
 @media (max-width: 1000px) {
     .banner__wrapper__row {
         max-width: 479px;
-        height: 600px;
+        max-height: 600px;
     }
 
     .banner__slide {
@@ -527,7 +527,7 @@ body.active-menu {
 
     .banner__wrapper__footer {
         position: absolute;
-        top: 90%;
+        top: 85%;
         left: 0;
         right: 0;
         bottom: 0;
@@ -947,7 +947,6 @@ hr.active {
 }
 
 .decisions__wrapper {
-    margin-top: 60px;
     /* margin-bottom: 300px; */
 }
 
@@ -959,7 +958,7 @@ hr.active {
     flex-wrap: wrap;
     gap: 20px;
 
-    margin-bottom: 60%;
+    margin-bottom: 55%;
     /* margin-top: 650px; */
 }
 
@@ -1005,10 +1004,11 @@ hr.active {
 }
 
 .decisions__wrapper__slider .decisions__slide {
-    background: radial-gradient(44.63% 45.59% at 40.31% 23.77%, rgba(3, 6, 66, 0) 0%, #65499B 100%);
-    box-shadow: -5px -5px 250px rgba(255, 255, 255, 0.02) inset;
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    border: 2px solid rgba(140, 197, 241, 0.50);
+    background: radial-gradient(109.67% 112.03% at 47.45% 0%, rgba(3, 6, 66, 0.00) 0%, #65499B 100%);
+    box-shadow: 4px 4px 32.6px 0px rgba(3, 6, 66, 0.20), -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(10px);
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
@@ -1104,8 +1104,15 @@ hr.active {
 }
 
 @media (max-width: 768px) {
+
+    .decisions__wrapper__slider .decisions__slide {
+        backdrop-filter: none;
+    }
+
     .decisions__wrapper__slider .mySwiper {
         padding: 0 1px;
+        height: 600px;
+        margin-top: -200px;
     }
 
     .decisions__wrapper__content p:first-child {
@@ -1118,6 +1125,7 @@ hr.active {
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 15%;
+        z-index: 2;
     }
 
     .decisions__wrapper .swiper-button-next, .decisions__wrapper .swiper-button-prev {
@@ -1684,8 +1692,9 @@ hr.active {
 
 .clients__wrapper {
     margin-top: 60px;
-
+    padding-bottom: 20px;
     display: flex;
+    gap: 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -1695,39 +1704,20 @@ hr.active {
     width: 150px;
 }
 
-/* @media (max-width: 1650px) {
-    .clients__wrapper {
-        gap: 64px;
-    }
-}
-
-@media (max-width: 1350px) {
-    .clients__wrapper img:last-child {
-        display: none;
-    }
-} */
 
 @media (max-width: 1000px) {
-    .clients__wrapper img:last-child {
-        display: none;
+    .clients__wrapper {
+        overflow-x: scroll;
     }
 }
 
 @media (max-width: 768px) {
-    .clients__wrapper img:nth-last-child(2) {
-        display: none;
-    }
-
     .clients__wrapper img{
         width: 120px;
     }
 }
 
 @media (max-width: 500px) {
-    .clients__wrapper img:nth-last-child(3) {
-        display: none;
-    }
-
     .clients__wrapper img{
         width: 100px;
     }
