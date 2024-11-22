@@ -3882,12 +3882,12 @@ hr.active {
 #history__development{
     margin-top: 140px;
     width: 100%;
-    height: 1145px;
+    max-height: 1145px;
     background:url("../img/history_development195.png") ;
 }
 
 .history__development__title{
-    padding: 159px 0;
+    padding: 159px 0 79px;
 
     h2{
         font-size: 52px;
@@ -3897,26 +3897,64 @@ hr.active {
     }
 }
 
+.history__development__cross__wrapper{
+    display: none;
+}
+
+.history__development__cross__wrapper.active{
+    display: block;
+    max-width: 690px;
+    max-height: 586px;
+
+}
+
 .history__development__swiper{
+    max-width: 1085px;
     margin: 0;
-    width: 70%;
-    height: 666px;
 }
 
 .history__development__wrapper{
     display: flex;
     flex-direction: row;
+    max-width: 1085px;
+    max-height: 666px;
+    margin: 119px 0;
 }
 
 .history__development__slide{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width: 91px;
+
+    a{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 41px;
+        color: #9EA1A3;
+    }
+
+    a:hover{
+        color:white;
+    }
+
+    a.active{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 41px;
+        color: white;
+    }
+}
+
+.history__development__pagination .swiper-pagination-progressbar-fill{
+   background-color: #70BBEAFF;
+}
+
+.history__development__pagination.swiper-pagination-progressbar.swiper-pagination-horizontal{
+    top: 42px;
 }
 
 
 .history__development__text{
-    width: 55%;
+    width: 100%;
+
     span{
         font-size: 42px;
         font-weight: 200;
@@ -3935,13 +3973,13 @@ hr.active {
 
 .history__development__cross{
     margin-top: 40px;
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 .history__development__cross__item{
-    width: 77%;
+    width: 100%;
 
     span{
         font-size: 20px;
@@ -3957,14 +3995,14 @@ hr.active {
     gap: 131px;
 }
 
-.history__cross--left{
-    margin-right: -90px;
+.history__cross--right{
+    padding: 0 22px;
 }
 
 .history__development__cross img{
     width: 171px;
     height: 168px;
-    margin: auto;
+    margin-left: -19px;
 }
 
 

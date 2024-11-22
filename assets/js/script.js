@@ -366,17 +366,40 @@ const teamSwiper = () =>{
 
 const historyDevelopment = () =>{
     const historyDevelopment = new Swiper('.history-development', {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+        slidesPerView: 'auto',
         pagination: {
-            el: '.techSupport__pagination',
-        },
-        scrollbar: {
-          el: '.history__development__scrollbar',
-          draggable: true,
+            el: '.history__development__pagination',
+            type: 'progressbar',
+            clickable: true,
         },
     });
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".history__development__slide a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("data-target");
+
+            document.querySelectorAll(".history__development__cross__wrapper").forEach(swiper => {
+                swiper.classList.remove("active");
+            });
+
+            const targetSwiper = document.getElementById(targetId);
+            if (targetSwiper) {
+                targetSwiper.classList.add("active");
+            }
+
+            links.forEach(link => {
+                link.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+    });
+});
 
 
 /*Слайдеры о нас конец */
