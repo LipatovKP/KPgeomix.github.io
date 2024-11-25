@@ -3912,14 +3912,18 @@ hr.active {
 
 /* history__development */
 
-
-
 #history__development{
     margin-top: 140px;
     width: 100%;
     max-height: 1145px;
-    background:url("../img/history_development195.png");
+    background:url("../img/history_development195.png") no-repeat center / 100%;
+}
 
+.bg__history__development--bg{
+    background: url(../img/Rectangle__I.png) no-repeat right / 31.5%;
+    position: relative;
+    top: -12px;
+    z-index: 2;
 }
 
 .history__development__title{
@@ -4046,6 +4050,12 @@ hr.active {
 
 /* working universities */
 
+#working__universities{
+    background: url("../img/Rectangle_X.png") no-repeat right top;
+    min-height: 1290px;
+}
+
+
 .working__universities__title{
     margin-top: 140px;
     h2{
@@ -4153,16 +4163,16 @@ hr.active {
 }
 
 
-.form__about {
-    position: relative;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    top: -1175px;
-    bottom: 0;
-    height: 100%;
-    margin-bottom: -1635px;
-}
+/*.form__about {*/
+/*    position: relative;*/
+/*    z-index: -1;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: -1175px;*/
+/*    bottom: 0;*/
+/*    height: 100%;*/
+/*    margin-bottom: -1635px;*/
+/*}*/
 
 
 .form__wrapper {
@@ -4185,6 +4195,11 @@ hr.active {
     letter-spacing: 0.48px;
 }
 
+.form__column--black.left span{
+    color: black;
+}
+
+
 .form__conection {
     margin-top: 60px;
     display: flex;
@@ -4201,6 +4216,10 @@ hr.active {
     align-items: center;
     gap: 12px;
     width: 232px;
+}
+
+.form__conection--black a{
+    color: black;
 }
 
 .form__conection a img {
@@ -4237,11 +4256,20 @@ hr.active {
     border-top: 20px;
 }
 
+.form__column--black.right form input{
+    border-bottom: 1px solid black;
+    color: black;
+}
+
 .form__column.right form input::placeholder {
     color: white;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 26px;
+}
+
+.form__column--black.right form input::placeholder{
+    color: black;
 }
 
 .form__column.right form input:nth-child(5) {
@@ -4262,6 +4290,11 @@ hr.active {
     color: white;
     padding: 12px 65px;
     cursor: pointer;
+}
+
+.custom-file-label--black{
+    border: 1px solid black;
+    color: black;
 }
 
 .file-name {
@@ -4332,6 +4365,10 @@ hr.active {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 18.20px;
+}
+
+.checkbox--black span{
+    color: black;
 }
 
 .form__layout .form__el {
