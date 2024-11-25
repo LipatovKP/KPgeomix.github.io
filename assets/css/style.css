@@ -4163,16 +4163,16 @@ hr.active {
 }
 
 
-/*.form__about {*/
-/*    position: relative;*/
-/*    z-index: -1;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    top: -1175px;*/
-/*    bottom: 0;*/
-/*    height: 100%;*/
-/*    margin-bottom: -1635px;*/
-/*}*/
+.form__about {
+    position: relative;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -300px;
+    bottom: 0;
+    height: 100%;
+    margin-bottom: -757px;
+}
 
 
 .form__wrapper {
@@ -4186,6 +4186,10 @@ hr.active {
     z-index: 2;
 }
 
+.form__wrapper--about{
+    padding: 0;
+    margin-top: -159px;
+}
 
 .form__column.left span{
     color: white;
