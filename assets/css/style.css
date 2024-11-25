@@ -3379,13 +3379,22 @@ hr.active {
     flex-direction: column;
     gap: 40px;
     max-width: 388px;
-    height: 588px;
+    max-height: 559px;
     padding: 40px;
     border: 1px solid #2C508C80;
     border-radius: 30px;
     background: linear-gradient(151.24deg, #00327C 0%, #8CC5F1 101.5%);
     transition: 0.5s;
     transform: scale(0.8);
+}
+
+.licenses__certificates__slide--white.swiper-slide{
+    background: linear-gradient(140.26deg, rgba(255, 255, 255, 0.1) 19.58%, rgba(44, 80, 140, 0.1) 139.59%);
+    border: 1px solid #2C508C7F;
+}
+
+.licenses__certificates__slide--dark.swiper-slide{
+    background: #030642;
 }
 
 .licenses__certificates__slide.swiper-slide-active{
@@ -3416,6 +3425,18 @@ hr.active {
     }
 }
 
+.licenses__link--white{
+    a{
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px 38px;
+    }
+}
+
 .licenses__logo__icon{
     width: 100%;
 
@@ -3440,6 +3461,23 @@ hr.active {
     }
 
     p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+}
+
+.licenses__text__card--white{
+    span{
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+    p{
+        color: black;
         margin-top: 10px;
         font-size: 20px;
         font-weight: 400;
@@ -3791,7 +3829,7 @@ hr.active {
 
 .team__slider{
     margin-top: 60px;
-    width: 70%;
+    width: 67%;
     height: 703px;
 }
 
