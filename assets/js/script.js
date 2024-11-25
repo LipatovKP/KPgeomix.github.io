@@ -296,6 +296,23 @@ const numbersAndEvidence = () =>{
             delay: 0,
         },
         speed: 3500,
+        breakpoints: {
+            1440: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+
+        },
     });
 };
 
