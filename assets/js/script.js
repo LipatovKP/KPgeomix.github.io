@@ -366,7 +366,7 @@ const teamSwiper = () =>{
 
 const historyDevelopment = () =>{
     const historyDevelopment = new Swiper('.history-development', {
-        slidesPerView: 'auto',
+        slidesPerView: 13,
         pagination: {
             el: '.history__development__pagination',
             type: 'progressbar',
@@ -401,6 +401,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// прогресс-бар
+document.querySelectorAll('.history__development__slide a').forEach((link, index) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const totalLinks = document.querySelectorAll('.history__development__slide a').length;
+
+        const percentage = ((index + 1) / totalLinks) * 100;
+
+        document.querySelector('.progress-bar').style.width = percentage + '%';
+    });
+});
 
 /*Слайдеры о нас конец */
 
