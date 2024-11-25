@@ -406,9 +406,9 @@ document.querySelectorAll('.history__development__slide a').forEach((link, index
     link.addEventListener('click', (event) => {
         event.preventDefault();
 
-        const totalLinks = document.querySelectorAll('.history__development__slide a').length;
+        let totalLinks = document.querySelectorAll('.history__development__slide a').length;
 
-        const percentage = ((index + 1) / totalLinks) * 100;
+        let percentage = ((index + 1) / totalLinks) * 100;
 
         document.querySelector('.progress-bar').style.width = percentage + '%';
     });
