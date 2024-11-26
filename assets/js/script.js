@@ -389,7 +389,6 @@ const achievementsSlider = () =>{
             nextEl: '.licenses__achievements__next',
             prevEl: '.licenses__achievements__prev',
         },
-
     });
 };
 
@@ -405,6 +404,29 @@ const ourClients = () =>{
         navigation: {
             nextEl: '.our__clients__next',
             prevEl: '.our__clients__prev',
+        },
+        breakpoints: {
+            1440: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+            768: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            360: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
         },
     });
 };
