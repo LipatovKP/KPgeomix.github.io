@@ -3541,14 +3541,216 @@ hr.active {
 
 @media (max-width: 480px) {
 
-    #about__company{
-        background: url('../img/two_480_G.png') no-repeat top right / 37%;
+    #about__company {
+        background: url(../img/two_480_G.png) no-repeat top / 100%;
+        position: relative;
+        top: -88px;
+        padding-top: 487px;
     }
 
+    .about__company__title h1{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .about__company__text{
+        width: 96%;
+    }
+
+    .about__company__text__white{
+
+
+        p{
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 32px;
+        }
+    }
+
+    .about__company__text__black{
+        width: 100%;
+    }
+
+    .about__company__link{
+        max-width: 280px;
+        max-height: 202px;
+
+        a{
+            max-width: 280px;
+            max-height: 54px;
+        }
+
+    }
+
+    .company__cross{
+        gap: 91px;
+    }
+
+    .company__cross--play{
+        top: -314px;
+        left: -238px;
+    }
+
+    .company__cross--play::before {
+        top: 92px;
+        right: 105px;
+        bottom: 77px;
+        left: 8px;
+        margin: -287px;
+    }
+
+    .about__company__cross{
+        width: 146%;
+        max-height: 294px;
+    }
+
+    .company__cross__item svg{
+        width: 100px;
+
+    }
+
+    .company__cross--left{
+        margin-right: -63px;
+    }
+
+    .company__cross--right{
+        left: -39px;
+    }
+
+    .company__quotes__item{
+
+        span{
+            font-size: 50px;
+            font-weight: 200;
+            line-height: 72px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
 }
 
 @media (max-width: 360px) {
+    #about__company {
+        background: url(../img/two_480_G.png) no-repeat top / 100%;
+        position: relative;
+        top: -74px;
+        padding-top: 356px;
+    }
 
+    .about__company__title h1{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .about__company__text{
+        width: 96%;
+    }
+
+    .about__company__text__white{
+
+        p{
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .about__company__text__black{
+        margin-top: 30px;
+        width: 341px;
+        padding: 15px;
+    }
+
+    .about__company__link{
+        margin-top: 30px;
+        max-width: 341px;
+        max-height: 202px;
+
+        a{
+            max-width: 341px;
+            max-height: 54px;
+            width: 100%;
+        }
+
+    }
+
+    .company__cross{
+        gap: 39px;
+    }
+
+    .company__cross--play{
+        top: -256px;
+        left: -294px;
+    }
+
+    .company__cross--play::before {
+        top: 92px;
+        right: 105px;
+        bottom: 77px;
+        left: 8px;
+        margin: -371px;
+    }
+
+    .about__company__cross{
+        margin-top: 284px;
+        width: 161%;
+        max-height: 583px;
+    }
+
+    .company__cross__img{
+        max-width: 123px;
+        max-height: 123px;
+        margin-top: 45px;
+    }
+
+    .company__cross__item{
+        width: 91%;
+
+        span{
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    .company__cross__item svg{
+        width: 123px;
+
+    }
+
+    .company__cross--left{
+        margin-right: -67px;
+    }
+
+    .company__cross--right{
+        width: 90%;
+        left: -35px;
+    }
+
+    .about__company__quotes__title h2{
+        margin-top: 60px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .company__quotes__item{
+
+        span{
+            font-size: 50px;
+            font-weight: 200;
+            line-height: 72px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
 
 }
 

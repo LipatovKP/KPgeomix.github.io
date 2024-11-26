@@ -311,6 +311,16 @@ const numbersAndEvidence = () =>{
                 spaceBetween: 30,
                 slidesPerGroup: 1,
             },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+            360: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
 
         },
     });
