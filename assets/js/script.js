@@ -339,7 +339,42 @@ const licensesCertificates = () =>{
             nextEl: '.licenses__certificates__next',
             prevEl: '.licenses__certificates__prev',
         },
-
+        breakpoints: {
+            1440: {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                centeredSlides: false,
+                loop: false,
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+            768: {
+                centeredSlides: false,
+                loop: false,
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+            480: {
+                centeredSlides: false,
+                loop: false,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+            360: {
+                centeredSlides: false,
+                loop: false,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            },
+        },
     });
 };
 
