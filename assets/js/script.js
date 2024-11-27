@@ -437,12 +437,55 @@ const teamSwiper = () =>{
         slidesPerGroup: 1,
         loop: true,
         centeredSlides: true,
+        effect: 'coverflow',
+        coverflowEffect:{
+            stretch: -45,
+            slideShadows: false,
+            rotate: 1,
+        },
         pagination: {
             el: '.team__slider__pagination',
         },
         navigation: {
             nextEl: '.team__slider__next',
             prevEl: '.team__slider__prev',
+        },
+        breakpoints: {
+            1440: {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+            },
+            1000: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+
+                coverflowEffect:{
+                    stretch: 122,
+                    slideShadows: true,
+                    rotate: 1,
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+
+                coverflowEffect:{
+                    stretch: 120,
+                    slideShadows: true,
+                    rotate: 1,
+                },
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            360: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
         },
 
     });
