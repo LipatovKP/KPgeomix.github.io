@@ -4967,14 +4967,14 @@ hr.active {
         width: 100%;
 
         span{
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 300;
             line-height: 20px;
         }
 
         a{
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 20px;
         }
     }
@@ -5340,13 +5340,327 @@ hr.active {
     padding: 0 22px;
 }
 
-.history__development__cross img{
-    width: 171px;
-    height: 168px;
+.history__development__cross svg{
+    width: 209px;
+    height: 247px;
     margin-left: -19px;
 }
 
+.history__development__cross path{
+    fill: white;
+}
 
+@media (max-width: 1000px) {
+    #history__development{
+        margin-top: 59px;
+        width: 100%;
+        max-height: 1145px;
+        background:url("../img/history_development195.png") no-repeat center;
+    }
+
+    .bg__history__development--bg{
+        background: url(../img/Rectangle__I.png) no-repeat top right / 37%;
+        position: relative;
+        top: -7px;
+        z-index: 2;
+    }
+
+    .history__development__title{
+        padding: 42px 0 40px;
+
+        h2{
+            font-size: 38px;
+            line-height: 45px;
+        }
+    }
+
+    .history__development__text{
+        width: 83%;
+
+        span{
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .history__development__cross{
+        width: 80%;
+    }
+
+    .history__cross {
+        padding: 28px 0 0 0;
+        gap: 80px;
+    }
+
+    .history__development__cross svg {
+        margin-left: -29px;
+    }
+
+    .history__cross--right {
+        margin-left: -23px;
+    }
+
+    .history__development__wrapper{
+        margin: 48px 0 75px 0;
+    }
+
+    .history__development__slide {
+
+        a {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+        }
+
+        a.active {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+    }
+}
+
+.display__768{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bg__history__development--bg{
+        background: url(../img/Rectangle__I.png) no-repeat top right / 37%;
+        position: relative;
+        top: -6px;
+    }
+
+    .history__development__cross__wrapper.active {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 690px;
+        max-height: 586px;
+    }
+
+    .history__development__title{
+        padding: 42px 0 74px;
+    }
+
+    .display__768{
+        display: block;
+        position: relative;
+        top: -242px;
+        font-size: 26px;
+        font-weight: 200;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .display__full{
+        display: none;
+    }
+
+    .history__development__cross {
+        margin-top: 18px;
+        width: 77%;
+    }
+
+    .history__development__cross svg {
+        width: 209px;
+        height: 195px;
+        margin-left: -45px;
+    }
+
+    .history__cross--right {
+        margin-left: -37px;
+    }
+
+    .history__cross {
+        padding: 0;
+        gap: 80px;
+    }
+
+    .history__development__text {
+        width: 88%;
+        margin-top: 40px;
+    }
+
+    .history__development__slide {
+
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        a.active {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    #history__development{
+        background:none;
+    }
+
+    .bg__history__development--bg{
+        background: url(../img/two_480_I.png) no-repeat top center / 100%;
+        position: relative;
+        top: -6px;
+    }
+
+    .history__development__title{
+        padding: 462px 0 40px;
+        width: 50%;
+
+        h2{
+            font-size: 28px;
+            line-height: 33px;
+            color: #2C508C;
+        }
+    }
+
+    .display__768 {
+        top: -267px;
+        color: black;
+    }
+
+    .history__development__480{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 86px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .history__development__text{
+        width: 100%;
+        margin-top: 0;
+        max-height: 100%;
+        overflow-y: scroll;
+
+        span{
+            color: black;
+        }
+
+        p{
+            color: black;
+        }
+    }
+
+    .history__development__cross{
+        width: 100%;
+    }
+
+    .history__development__cross__item{
+
+
+        span{
+            color: black;
+        }
+    }
+
+    .history__cross{
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*gap: 131px;*/
+    }
+
+    .history__cross--right{
+        /*padding: 0 22px;*/
+    }
+
+    .history__development__cross svg{
+        /*width: 171px;*/
+        /*height: 168px;*/
+        /*margin-left: -19px;*/
+    }
+
+    .history__development__cross path{
+        fill: black;
+    }
+
+    .history__development__swiper {
+        width: 119vh;
+        margin-top: -141px;
+    }
+
+    .history__development__wrapper{
+        max-height: 777px;
+    }
+
+    .history__development__slide {
+        a.active {
+            color: black;
+        }
+    }
+
+    .history__development__cross__wrapper.active {
+        margin-top: -70px;
+    }
+
+    .history__development__progress-bar{
+        display: none;
+    }
+
+    .history__development__progress-bar--height {
+        position: absolute;
+        top: 4px;
+        left: 59px;
+        width: 9px;
+        height: 109%;
+        background-color: rgba(158, 161, 163, 0.5);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .progress-bar--height {
+        height: 5%;
+        width: 100%;
+        background: linear-gradient(90deg, #00327C 0%, #8CC5F1 100%);
+        border-radius: 5px;
+        transition: width 0.5s ease;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .history__development__title{
+        padding: 330px 0 40px;
+
+        h2{
+            font-size: 26px;
+            line-height: 31px;
+        }
+    }
+
+    .history__development__cross__wrapper.active {
+        width: 73%;
+        margin-top: -86px;
+    }
+
+    .display__768 {
+        top: -233px;
+    }
+
+    .history__development__cross__item {
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+        .history__cross--right {
+            margin-left: -27px;
+        }
+    }
+
+}
 /* history__development end */
 
 /* working universities */

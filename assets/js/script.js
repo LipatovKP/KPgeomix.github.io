@@ -499,6 +499,20 @@ const historyDevelopment = () =>{
             type: 'progressbar',
             clickable: true,
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 13,
+                direction: 'horizontal',
+            },
+            480: {
+                slidesPerView: 13,
+                direction: 'vertical',
+            },
+            360: {
+                slidesPerView: 13,
+                direction: 'vertical',
+            },
+        },
     });
 };
 
@@ -537,7 +551,10 @@ document.querySelectorAll('.history__development__slide a').forEach((link, index
 
         let percentage = ((index + 1) / totalLinks) * 100;
 
+
         document.querySelector('.progress-bar').style.width = percentage + '%';
+        document.querySelector('.progress-bar--height').style.height = percentage + '%';
+
     });
 });
 
