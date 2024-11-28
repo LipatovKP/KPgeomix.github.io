@@ -5473,8 +5473,7 @@ hr.active {
 
     .display__768{
         display: block;
-        position: relative;
-        top: -242px;
+        order: 1;
         font-size: 26px;
         font-weight: 200;
         line-height: 26px;
@@ -5550,7 +5549,6 @@ hr.active {
     }
 
     .display__768 {
-        top: -267px;
         color: black;
     }
 
@@ -5558,13 +5556,12 @@ hr.active {
         display: flex;
         flex-direction: row-reverse;
         margin-top: 86px;
-        gap: 20px;
         width: 100%;
     }
 
     .history__development__text{
         width: 100%;
-        margin-top: 0;
+        margin-top: 40px;
         max-height: 100%;
         overflow-y: scroll;
 
@@ -5577,23 +5574,42 @@ hr.active {
         }
     }
 
+    .history__cross{
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+
     .history__development__cross{
+        flex-direction: column;
         width: 100%;
     }
 
+    .history__cross--right {
+        margin-left: 0;
+    }
+
     .history__development__cross__item{
+        border-bottom: 1px solid black;
+        margin-top: 20px;
 
         span{
+            font-size: 19px;
+            line-height: 28px;
             color: black;
+        }
+
+        span br{
+            display: none;
         }
     }
 
-    .history__development__cross path{
-        fill: black;
+    .history__development__cross svg{
+        display: none;
     }
 
     .history__development__swiper {
-        width: 119vh;
+        min-width: 20%;
         margin-top: -141px;
     }
 
@@ -5608,7 +5624,8 @@ hr.active {
     }
 
     .history__development__cross__wrapper.active {
-        margin-top: -70px;
+        width: 100%;
+        margin-top: -93px;
     }
 
     .history__development__progress-bar{
@@ -5646,26 +5663,24 @@ hr.active {
         }
     }
 
-    .history__development__cross__wrapper.active {
-        width: 73%;
-        margin-top: -86px;
+    .history__development__swiper {
+        min-width: 25%;
+        margin-top: -141px;
     }
 
-    .display__768 {
-        top: -233px;
+    .history__development__cross__wrapper.active {
+        width: 100%;
+        margin-top: -94px;
     }
 
     .history__development__cross__item {
         span {
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 500;
             line-height: 25px;
         }
     }
 
-    .history__cross--right {
-        margin-left: -27px;
-    }
 }
 /* history__development end */
 
@@ -5767,6 +5782,7 @@ hr.active {
 
     .working__universities__title {
         margin-top: 109px;
+        width: 64%;
         h2 {
             font-size: 38px;
             font-weight: 500;
@@ -5845,7 +5861,7 @@ hr.active {
 @media (max-width: 480px) {
     #working__universities {
         background: url("../img/two_480_X.png") no-repeat top center / 100%;
-        min-height: 1442px;
+        min-height: 1300px;
         margin-top: 288px;
     }
 
@@ -5939,7 +5955,6 @@ hr.active {
     height: 100%;
     margin-bottom: -757px;
 }
-
 
 .form__wrapper {
     padding: 140px 0 0 0;
@@ -6187,6 +6202,11 @@ hr.active {
     .form__btn {
         margin-left: 60px;
     }
+
+    .form__about{
+        top: -139px;
+        margin-bottom: -193px;
+    }
 }
 
 @media (max-width: 930px) {
@@ -6215,6 +6235,7 @@ hr.active {
 
 @media (max-width: 768px) {
     .form__wrapper {
+        margin-top: 1%;
         flex-direction: column;
     }
 
@@ -6237,6 +6258,7 @@ hr.active {
     .form__column.right form input:nth-child(5) {
         width: 100%;
     }
+
 }
 
 @media (max-width: 500px) {
@@ -6268,6 +6290,10 @@ hr.active {
     gap: 20px;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.footer__column ul{
+    list-style-type: none;
 }
 
 .footer__column h3 {

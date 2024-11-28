@@ -367,7 +367,7 @@ const licensesCertificates = () =>{
                 spaceBetween: 30,
                 slidesPerGroup: 1,
             },
-            360: {
+            320: {
                 centeredSlides: false,
                 loop: false,
                 slidesPerView: 1,
@@ -415,15 +415,11 @@ const ourClients = () =>{
                 slidesPerView: 2,
                 slidesPerGroup: 1,
             },
-            768: {
-                slidesPerView: 1,
+            769: {
+                slidesPerView: 2,
                 slidesPerGroup: 1,
             },
-            480: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-            },
-            360: {
+            320: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
             },
@@ -482,7 +478,7 @@ const teamSwiper = () =>{
                 slidesPerView: 1,
                 slidesPerGroup: 1,
             },
-            360: {
+            320: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
             },
@@ -500,15 +496,11 @@ const historyDevelopment = () =>{
             clickable: true,
         },
         breakpoints: {
-            768: {
+            481: {
                 slidesPerView: 13,
                 direction: 'horizontal',
             },
-            480: {
-                slidesPerView: 13,
-                direction: 'vertical',
-            },
-            360: {
+            310: {
                 slidesPerView: 13,
                 direction: 'vertical',
             },
