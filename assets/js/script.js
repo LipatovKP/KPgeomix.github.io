@@ -251,7 +251,7 @@ const techSupport = () =>{
         },
         breakpoints: {
             1440: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 slidesPerGroup: 1,
             },
             1000: {
