@@ -2030,10 +2030,10 @@ hr.active {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 1080px;
-    height: 750px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    max-height: 750px;
 }
 
 .swiper__slide__card{
@@ -2155,11 +2155,36 @@ hr.active {
     border: 1px solid transparent;
 }
 
+@media (max-width: 1621px) {
+    .consultation__layout {
+        justify-content: flex-start;
+    }
+
+    .consultation__wrapper__left {
+        display: flex;
+        flex-direction: row;
+        width: 66%;
+        gap: 127px;
+    }
+    .consultation__link{
+        max-width: 484px;
+    }
+
+    .consultation__wrapper__left a{
+        width: 100%;
+    }
+}
+
 @media (max-width: 1000px) {
+
+    .consultation__layout {
+        justify-content: space-between;
+    }
 
     .consultation__wrapper__left{
         width: 970px;
         flex-direction: row;
+        gap: 0;
     }
 
     .consultation__wrapper__left p{
@@ -2172,7 +2197,6 @@ hr.active {
         margin-top: 0;
         margin-left: 25px;
         width: 484px;
-
     }
 
     .consultation__title h2{
@@ -2182,7 +2206,7 @@ hr.active {
     }
 
     .consultation__wrapper__left a{
-       width: 465px;
+        width: 465px;
     }
 
     .swiper__slide__card__item{
@@ -2239,6 +2263,7 @@ hr.active {
     .consultation__wrapper__right{
         width: 444px;
     }
+
     .consultation__wrapper__left{
         width: 480px;
         flex-direction: column;
@@ -2257,7 +2282,6 @@ hr.active {
         margin-bottom: -30px;
         font-size: 32px;
         line-height: 32px;
-
     }
 
     .consultation__wrapper__row.active{
@@ -2285,6 +2309,7 @@ hr.active {
         margin-left: -9px;
         width: 350px;
     }
+
     .consultation__wrapper__left{
         width: 360px;
         flex-direction: column;
@@ -2328,7 +2353,6 @@ hr.active {
         padding: 20px;
     }
 }
-
 
 /* consultation style end*/
 
@@ -5889,7 +5913,7 @@ hr.active {
     height: 100%;
     display: grid;
     grid-template-rows: auto;
-    background: linear-gradient(180deg, #FFFFFF 46.02%, #4E79CA 60.06%, #00327C 70.85%, #091823 80.88%, #14161A 100%);
+    background: linear-gradient(180deg, #FFFFFF 46.02%, #4E79CA 62.06%, #00327C 76.85%, #091823 97.88%, #14161A 100%);
     padding: 50px 0;
 }
 
