@@ -3468,7 +3468,7 @@ hr.active {
         margin-top: 40px;
         display: flex;
         flex-direction: row;
-        width: 69%;
+        width: 100%;
     }
 }
 

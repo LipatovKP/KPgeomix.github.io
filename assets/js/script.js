@@ -316,7 +316,7 @@ const numbersAndEvidence = () =>{
                 spaceBetween: 30,
                 slidesPerGroup: 1,
             },
-            360: {
+            320: {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
