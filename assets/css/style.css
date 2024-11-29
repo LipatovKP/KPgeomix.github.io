@@ -4613,7 +4613,8 @@ hr.active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 67%;
+    gap: 20px;
     height: auto;
 }
 
