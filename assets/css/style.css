@@ -3323,6 +3323,18 @@ hr.active {
     }
 }
 
+.company__cross__item svg{
+    cursor: pointer;
+}
+
+.company__cross__item:last-child:hover svg circle {
+    stroke: #8CC5F1;
+}
+
+.company__cross__item:last-child:hover svg .cls-2 {
+    stroke: #8CC5F1;
+}
+
 .about__company__quotes__title h2{
     margin-top: 100px;
     font-size: 48px;
