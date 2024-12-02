@@ -330,7 +330,6 @@ const licensesCertificates = () =>{
     const licensesCertificates = new Swiper('.licenses-certificates', {
         slidesPerView: 3,
         slidesPerGroup: 1,
-        loop: true,
         centeredSlides: true,
         pagination: {
             el: '.licenses__certificates__pagination',
@@ -341,8 +340,9 @@ const licensesCertificates = () =>{
         },
         breakpoints: {
             1440: {
-                loop: true,
                 centeredSlides: true,
+                loop: true,
+                initialSlide: 2,
                 slidesPerView: 3,
                 slidesPerGroup: 2,
             },
