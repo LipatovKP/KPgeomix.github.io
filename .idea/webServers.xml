@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b2255674-0ff0-4b79-9037-a09b4a1f29f5" name="geomix">
+        <fileTransfer rootFolder="/home/c/cy34591" accessType="SFTP" host="vh428.timeweb.ru" port="22" sshConfigId="937c9882-8836-4da9-b32a-fbbc9ae7be7d" sshConfig="cy34591@vh428.timeweb.ru:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

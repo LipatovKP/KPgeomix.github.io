@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="vh428.timeweb.ru" id="937c9882-8836-4da9-b32a-fbbc9ae7be7d" port="22" nameFormat="DESCRIPTIVE" username="cy34591" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

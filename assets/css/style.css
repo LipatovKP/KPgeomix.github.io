@@ -2155,27 +2155,27 @@ hr.active {
     border: 1px solid transparent;
 }
 
+/*@media (max-width: 1621px) {*/
+/*    .consultation__layout {*/
+/*        justify-content: flex-start;*/
+/*    }*/
+
+/*    .consultation__wrapper__left {*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        width: 66%;*/
+/*        gap: 127px;*/
+/*    }*/
+/*    .consultation__link{*/
+/*        max-width: 484px;*/
+/*    }*/
+
+/*    .consultation__wrapper__left a{*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
 @media (max-width: 1621px) {
-    .consultation__layout {
-        justify-content: flex-start;
-    }
-
-    .consultation__wrapper__left {
-        display: flex;
-        flex-direction: row;
-        width: 66%;
-        gap: 127px;
-    }
-    .consultation__link{
-        max-width: 484px;
-    }
-
-    .consultation__wrapper__left a{
-        width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
 
     .consultation__layout {
         justify-content: space-between;
@@ -3696,13 +3696,13 @@ hr.active {
 
     .about__company__text__black{
         margin-top: 30px;
-        width: 341px;
+        max-width: 341px;
         padding: 15px;
     }
 
     .about__company__link{
         margin-top: 30px;
-        max-width: 341px;
+        max-width: 100%;
         max-height: 202px;
 
         a{
@@ -4462,7 +4462,7 @@ hr.active {
     }
 
     .licenses__achievements__slider{
-        max-width: 348px;
+        max-width: 315px;
     }
 
     .licenses__achievements__text{
@@ -5110,7 +5110,7 @@ hr.active {
         }
 
         .post {
-            font-size: 22px;
+            font-size: 21px;
             line-height: 31px;
         }
     }
