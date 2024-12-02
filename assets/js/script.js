@@ -344,7 +344,7 @@ const licensesCertificates = () =>{
                 loop: true,
                 centeredSlides: true,
                 slidesPerView: 3,
-                slidesPerGroup: 1,
+                slidesPerGroup: 2,
             },
             1000: {
                 centeredSlides: false,
