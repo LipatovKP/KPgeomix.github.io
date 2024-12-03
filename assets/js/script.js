@@ -241,7 +241,7 @@ const techSupport = () =>{
     const techSupport = new Swiper('.techSupport', {
         slidesPerView: 3,
         spaceBetween: 60,
-        slidesPerGroup: 1,
+        slidesPerGroup: 3,
         pagination: {
             el: '.techSupport__pagination',
         },
@@ -251,8 +251,8 @@ const techSupport = () =>{
         },
         breakpoints: {
             1440: {
-                slidesPerView: 2,
-                slidesPerGroup: 1,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
             },
             1000: {
                 slidesPerView: 2,
