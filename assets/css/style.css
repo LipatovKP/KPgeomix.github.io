@@ -664,6 +664,7 @@ body.active-menu {
 .product__wrapper {
     border: 1px #00327C solid;
     padding: 0 40px 0 40px;
+    border-radius: 0 0 20px 20px;
 }
 
 .product__column {
@@ -863,21 +864,18 @@ body.active-menu {
     margin-bottom: -1px;
     position: relative;
     transition: all 0.1s ease-in-out;
+    border-radius: 20px 20px 0 0;
 }
 
 .product__column__header.active::after {
     content: "";
     position: absolute;
-
     width: 85%;
     right: 0;
     left: 0;
-
     margin: 0 auto;
-
     background-color: #00327C;
     height: 1px;
-
     bottom: -1px;
 }
 
