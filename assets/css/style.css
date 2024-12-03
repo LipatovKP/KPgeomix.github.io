@@ -765,9 +765,16 @@ body.active-menu {
     fill: #65499B;
 }
 
+
+/*.li path {*/
+/*    fill: #2C508C;*/
+/*}*/
+
 .link__blue.act{
     color:  #2C508C;
 }
+
+
 
 .product__header__el span {
     background: #65499B;
@@ -4664,13 +4671,13 @@ hr.active {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    color: #00327C;
+    color: white;
+    background: linear-gradient(to right, #00327C, #8CC5F1);
     transition: background-color 0.5s ease;
 }
 
 .btn__our__clients:hover{
-    background: linear-gradient(to right, #00327C, #8CC5F1);
-    color: white;
+    color: black;
 }
 
 @media (max-width: 1000px) {

@@ -565,10 +565,10 @@ const tabs = () => {
             // Добавляем класс "active" к текущему заголовку вкладки
             tabEl.classList.add("active");
 
-            starTextEl.forEach((content) => {
-                content.classList.remove("act");
-            });
-            starTextEl[index].classList.add("act");
+            // starTextEl.forEach((content) => {
+            //     content.classList.remove("act");
+            // });
+            // starTextEl[index].classList.add("act");
 
 
             // Удаляем класс "active" у всех содержимых вкладок
