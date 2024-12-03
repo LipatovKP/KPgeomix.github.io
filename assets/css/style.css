@@ -4680,6 +4680,16 @@ hr.active {
     color: black;
 }
 
+.btn__our__clients--white{
+    color: #00327C;
+    background: white;
+}
+
+.btn__our__clients--white:hover{
+    color: black;
+    background: linear-gradient(to right, #00327C, #8CC5F1);
+}
+
 @media (max-width: 1000px) {
     #our__clients{
         background: url('../img/two__stones__O.png') no-repeat right top / 37%;
