@@ -765,16 +765,13 @@ body.active-menu {
     fill: #65499B;
 }
 
-
-/*.li path {*/
-/*    fill: #2C508C;*/
-/*}*/
-
-.link__blue.act{
-    color:  #2C508C;
+.product__column__header.active .product__header__el path {
+    fill:  #2C508C;
 }
 
-
+.product__column__header.active .product__header__el a {
+    color: #2C508C;
+}
 
 .product__header__el span {
     background: #65499B;
@@ -6041,6 +6038,16 @@ hr.active {
 /* working universities end */
 
 
+
+
+
+/* dec__geomix */
+
+.dec__geomix__img{
+    width: 300px;
+}
+
+/* dec__geomix end */
 
 .gradient__background {
     width: 100%;

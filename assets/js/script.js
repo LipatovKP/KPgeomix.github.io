@@ -344,7 +344,7 @@ const licensesCertificates = () =>{
                 loop: true,
                 initialSlide: 2,
                 slidesPerView: 3,
-                slidesPerGroup: 2,
+                slidesPerGroup: 1,
             },
             1000: {
                 centeredSlides: true,
@@ -550,6 +550,19 @@ document.querySelectorAll('.history__development__slide a').forEach((link, index
 
 /*Слайдеры о нас конец */
 
+/* Слайдеры решения */
+
+const solutionSlider = () =>{
+    const solutionSlider = new Swiper('.solution-slider', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        pagination: {
+            el: '.our__clients__pagination',
+        },
+    });
+};
+
+/* слайдеры решения конец */
 const tabs = () => {
     const tabsEl = document.querySelectorAll(".product__column__header");
     const tabContentsEl = document.querySelectorAll(".product__tab");
@@ -593,6 +606,7 @@ const init = () => {
     ourClients()
     achievementsSlider()
     techSupport()
+    solutionSlider()
     tabs()
     sliderDecisions()
     numbersAndEvidence()
