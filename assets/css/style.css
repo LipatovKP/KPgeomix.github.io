@@ -4523,14 +4523,15 @@ hr.active {
 }
 
 .our__clients__swiper{
-    margin: 60px 0;
-    width: 66%;
+    margin: 60px 0 0 65px;
+    width: 55%;
     height: auto;
-    padding: 0 92px 68px;
+    overflow: hidden;
 }
 
 .our__clients__wrapper{
-    overflow: hidden;
+    max-width: 1400px;
+    /*overflow: hidden;*/
 }
 
 .our__clients__slide{
@@ -4605,11 +4606,18 @@ hr.active {
 
 }
 
-.our__clients__swiper .swiper-pagination {
+.our__clients__slider__footer{
+    display: flex;
+    width: 63%;
+    margin-top: 35px;
+}
+
+.our__clients__slider__footer .swiper-pagination {
+    position: relative;
     width: 100%;
 }
 
-.our__clients__swiper .swiper-pagination-bullet {
+.our__clients__slider__footer .swiper-pagination-bullet {
     background: transparent;
     border: 1px solid #2C508C;
     opacity: 1;
@@ -4617,10 +4625,18 @@ hr.active {
     height: 15px;
 }
 
-.our__clients__swiper .swiper-pagination-bullet-active {
+.our__clients__slider__footer .swiper-pagination-bullet-active {
     background: #2C508C;
     border: 1px solid transparent;
 }
+
+.our__clients__prev,
+.our__clients__next{
+    position: relative;
+    top: -350px;
+
+}
+
 
 .our__clients__items{
     margin-top: 81px;
@@ -4672,7 +4688,6 @@ hr.active {
     }
 
     .our__clients__swiper{
-        overflow: visible;
         width: 63%;
         height: 397px;
         padding: 0;
@@ -4710,7 +4725,15 @@ hr.active {
     }
 
     .our__clients__prev, .our__clients__next{
-        top: 433px;
+        top: 0;
+    }
+
+    .our__clients__slider__footer .swiper-pagination {
+        margin-top: 17px;
+    }
+
+    .our__clients__swiper {
+        margin: 60px 0 0 0;
     }
 
     .our__clients__items{
@@ -4734,7 +4757,6 @@ hr.active {
     }
 
     .our__clients__swiper{
-        overflow: visible;
         width: 48%;
         padding: 0;
     }
@@ -4747,6 +4769,10 @@ hr.active {
         img{
             max-height: 60px;
         }
+    }
+
+    .our__clients__slider__footer {
+        width: 49%;
     }
 
     .our__clients__it__img--1, .our__clients__it__img--6{
@@ -4788,6 +4814,10 @@ hr.active {
         img{
             max-height: 48px;
         }
+    }
+
+    .our__clients__slider__footer {
+        width: 100%;
     }
 
     .our__clients__it__img--1, .our__clients__it__img--6, .our__clients__it__img--5{

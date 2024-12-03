@@ -393,7 +393,6 @@ const achievementsSlider = () =>{
 
 const ourClients = () =>{
     const ourClients = new Swiper('.our-clients', {
-        // direction: 'horizontal',
         slidesPerView: 2,
         spaceBetween: 10,
         slidesPerGroup: 1,
@@ -407,15 +406,15 @@ const ourClients = () =>{
         breakpoints: {
             1440: {
                 slidesPerView: 2,
-                spaceBetween: 10,
-                slidesPerGroup: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 2,
             },
             1000: {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
             },
             769: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 slidesPerGroup: 1,
             },
             320: {
