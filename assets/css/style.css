@@ -4995,6 +4995,62 @@ hr.active {
     border: 1px solid transparent;
 }
 
+@media (max-width: 1587px) {
+    .team__text{
+        margin-top: 40px;
+        width: 62%;
+
+        p{
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .team__slider{
+        margin-top: 60px;
+        width: 62%;
+        height: 666px;
+    }
+
+    .team__slider__slide.swiper-slide{
+        max-height: 534px;
+        padding: 20px;
+    }
+
+    .team__slide_head{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        span{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+
+        a{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+
+    .team__slide_bottom{
+        margin-top: 10px;
+        gap: 10px;
+
+        span {
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        .post {
+            font-size: 22px;
+            line-height: 31px;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     #team{
         background: url('../img/two__stone__M.png') no-repeat top right / 37%;
@@ -5074,7 +5130,7 @@ hr.active {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 948px) {
     #team{
         background: url('../img/two__stone__M.png') no-repeat top right / 37%;
     }

@@ -465,7 +465,7 @@ const teamSwiper = () =>{
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
-
+                loop: true,
                 coverflowEffect:{
                     stretch: 120,
                     slideShadows: true,
