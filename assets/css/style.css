@@ -6035,17 +6035,348 @@ hr.active {
 }
 /* working universities end */
 
+/* through__miner */
 
+.through__miner__title{
+    margin-top: 60px;
+
+    h1{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 62px;
+        color: #2C508C;
+    }
+}
+
+.through__miner__mineToMill{
+    margin-top: 60px;
+    padding: 40px;
+    max-height: 568px;
+    background: linear-gradient(90deg, rgba(0, 51, 120, 0.2) 2.12%, rgba(0, 51, 120, 0.1) 87.81%);
+    border-radius: 20px;
+}
+
+.through__miner__mineToMill__title{
+
+    h2{
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 42px;
+        color: #00327C;
+    }
+}
+
+.through__miner__mineToMill__link{
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(90deg, #00327C 0%, #8CC5F1 100%);
+    border-radius: 20px;
+}
+
+.mineToMill__link__grid{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    margin: 10px;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    color: white;
+}
+
+
+
+.through__miner__mineToMill__row{
+    border-bottom: 1px solid #9EA1A3;
+
+}
+
+.through__miner__mineToMill__row--noBorder{
+    border-bottom: none;
+}
+
+.mineToMill__img{
+    margin-right: 10px;
+}
+
+/* through__miner end */
 
 
 
 /* dec__geomix */
 
-.dec__geomix__img{
-    width: 300px;
+#dec__geomix{
+    background: url("../img/Group_2084F.png") no-repeat center / 100%;
+    height: 1389px;
+    padding-top: 1px;
+    margin-top: 100px;
 }
 
+.dec__geomix__digitalProduction{
+    margin-top: 140px;
+
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 48px;
+        color: #14161A;
+
+    }
+}
+
+.dec__geomix__digitalProduction__text{
+    margin-top: 60px;
+
+    p{
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 42px;
+    }
+}
+
+.dec__geomix__text__wrapper{
+    margin-top: 410px;
+}
+
+.dec__geomix__text{
+    width: 100%;
+}
+
+.dec__geomix__text__title{
+
+    h3{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 48px;
+        color: #FFFFFF;
+
+    }
+}
+
+.dec__geomix__text1{
+    margin-top: 60px;
+    width: 49%;
+
+    p{
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+}
+
+.dec__geomix__text2{
+    margin-top: 40px;
+    width: 55%;
+
+    p{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.2px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+}
+
+/*.dec__geomix__img{*/
+/*    width: 300px;*/
+/*}*/
+
 /* dec__geomix end */
+
+/* solution__slider */
+
+#solution__slider{
+    background: #15161a;
+}
+
+.solution__slider__title{
+
+    h3{
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 62.4px;
+        color: #FFFFFF;
+    }
+}
+
+.solution__slider__container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    background: url("../img/Vector_decisions.png") no-repeat center / 66%;
+}
+
+.solution__slider__left, .solution__slider__right{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 30%;
+    height: 100%;
+}
+
+.solution__slider__center{
+    margin: auto 5%;
+    width: 30%;
+}
+
+.solution__slider__left__item__1,
+.solution__slider__left__item__2,
+.solution__slider__center__item,
+.solution__slider__right__item__1,
+.solution__slider__right__item__2{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.solution__slider__left__item__1,
+.solution__slider__right__item__2{
+    background: linear-gradient(138.38deg, rgba(255, 255, 255, 0.1) 4.94%, rgba(44, 80, 140, 0.1) 88.15%);
+    border: 1px solid #2C508C80;
+    border-radius: 30px;
+}
+
+.solution__slider__left__item--blue{
+    background: linear-gradient(181.1deg, rgba(3, 6, 66, 0) -5.43%, #00327C 117.73%);
+    border: 1px solid #EEEDED33;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: -5px -5px 250px 0px #FFFFFF05 inset;
+    box-shadow: 4px 4px 32.6px 0px #03064233;
+}
+
+.solution__slider__center__item{
+    background: linear-gradient(150.72deg, #00327C 9.04%, #8CC5F1 101.46%);
+    border-radius: 30px;
+}
+
+.solution__slider__left__slide,
+.solution__slider__right__slide,
+.solution__slider__center__slide{
+    display: flex;
+    flex-direction: column;
+    max-height: 485px;
+    gap: 40px;
+
+}
+
+.solution__slider__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    img{
+        width: 20px;
+        object-fit: contain;
+    }
+
+    a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 5px 38px;
+        color: white;
+    }
+}
+
+.solution__slider__vector svg{
+    width: 42px;
+}
+
+.solution__slider__text{
+    margin-bottom: 40px;
+
+    span{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 52px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+
+    }
+
+    p{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+}
+
+.solution__slider__pagination.swiper-pagination{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+    padding: 5px;
+    width: 90%;
+    max-height: 20px;
+}
+
+.solution__slider__pagination.swiper-pagination .swiper-pagination-bullet{
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF80;
+    border-radius: 0;
+}
+
+.solution__slider__pagination.swiper-pagination .swiper-pagination-bullet-active{
+   background-color: #FFFFFF;
+}
+
+
+/* solution__slider end */
+
+
+
+
+
+/* bottom__geomix */
+
+#bottom__geomix{
+    background: url("../img/bottom_geomix.png");
+    min-height: 700px;
+    height: 100%;
+}
+
+/* bottom__geomix end */
+
+
+/* achieving__efficiency */
+
+
+.achieving__efficiency__gallery__min{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 70%;
+}
+
+.achieving__efficiency__gallery__item{
+
+    img{
+        object-fit: contain;
+    }
+}
+
+.achieving__efficiency__card__img{
+    width: 200px;
+}
+
+/* achieving__efficiency end */
 
 .gradient__background {
     width: 100%;

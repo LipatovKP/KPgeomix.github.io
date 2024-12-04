@@ -556,8 +556,10 @@ const solutionSlider = () =>{
     const solutionSlider = new Swiper('.solution-slider', {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 35,
+        loop:false,
         pagination: {
-            el: '.our__clients__pagination',
+            el: '.solution__slider__pagination',
         },
     });
 };
@@ -577,12 +579,6 @@ const tabs = () => {
             
             // Добавляем класс "active" к текущему заголовку вкладки
             tabEl.classList.add("active");
-
-            // starTextEl.forEach((content) => {
-            //     content.classList.remove("act");
-            // });
-            // starTextEl[index].classList.add("act");
-
 
             // Удаляем класс "active" у всех содержимых вкладок
             tabContentsEl.forEach((content) => {
