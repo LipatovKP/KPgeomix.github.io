@@ -560,6 +560,7 @@ const solutionSlider = () =>{
         loop:false,
         pagination: {
             el: '.solution__slider__pagination',
+            clickable: true,
         },
     });
 };
