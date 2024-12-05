@@ -6085,7 +6085,15 @@ hr.active {
     color: white;
 }
 
+.mineToMill__link__grid:hover path{
+    transition: fill 0.5s;
+    fill: black;
+}
 
+.mineToMill__link__grid:hover{
+    transition: fill 0.5s;
+    color: black;
+}
 
 .through__miner__mineToMill__row{
     border-bottom: 1px solid #9EA1A3;
