@@ -6416,8 +6416,8 @@ hr.active {
 #implement__effect .implement__bg{
     position: absolute;
     z-index: -1;
-    bottom: 37%;
-    height: 50%;
+    bottom: 23%;
+    height: 60%;
     width: 100%;
 }
 
@@ -6514,8 +6514,13 @@ hr.active {
     }
 }
 
-.achieving__efficiency__bg{
-    background: url("../img/Vector_achieving_efficiency_wrapper.png") no-repeat right / 46%;
+#implement__effect .achieving__efficiency__bg{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    height: 37%;
+    width: 55%;
+    right: 0;
 }
 
 .achieving__efficiency__title{
@@ -6577,26 +6582,97 @@ hr.active {
     border: none;
 }
 
-.achieving__efficiency__gallery__min{
+/* implement__effect end */
+
+/* decisions__gallery */
+
+#decisions__gallery{
+    background: #14161A;
+}
+
+.decisions__gallery__min{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
-    width: 70%;
+    padding-top: 80px;
+    width: 100%;
 }
 
-.achieving__efficiency__gallery__item{
-
+.decisions__gallery__item{
+    max-height: 293px;
     img{
         object-fit: contain;
     }
 }
 
-.achieving__efficiency__card__img{
-    width: 200px;
+.decisions__gallery__big{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 140px;
+    gap: 30px;
 }
 
-/* implement__effect end */
+.decisions__gallery__card__left{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 40%;
+    background: linear-gradient(144.61deg, rgba(16, 17, 30, 0.1) -6.28%, rgba(44, 80, 140, 0.1) 65.66%);
+    border: 1px solid #8CC5F199;
+    border-radius: 20px;
+
+}
+
+.decisions__gallery__card__text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p{
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 42px;
+        letter-spacing: 0.16px;
+        color: #FFFFFF;
+    }
+
+    span{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0.16px;
+        color: #FFFFFF;
+    }
+}
+
+.decisions__gallery__card__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    width: 60%;
+    background: url("../img/gallery__card.png") no-repeat center / 100%;
+    border-radius: 20px;
+}
+
+.decisions__gallery__card__text__right p{
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+}
+
+
+.decisions__gallery__card__img{
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+/* decisions__gallery end */
 
 .gradient__background {
     width: 100%;
