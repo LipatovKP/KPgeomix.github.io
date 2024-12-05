@@ -6108,17 +6108,132 @@ hr.active {
     margin-right: 10px;
 }
 
+@media (max-width: 1000px) {
+    .through__miner__title{
+
+        h1{
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 45.6px;
+            letter-spacing: 0.32px;
+        }
+    }
+
+    .through__miner__mineToMill__title{
+
+        h2{
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 38.4px;
+            letter-spacing: 0.16px;
+        }
+    }
+
+    .mineToMill__link__grid{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.8px;
+        letter-spacing: 0.16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .through__miner__title{
+
+        h1{
+            font-size: 38px;
+            line-height: 38px;
+        }
+    }
+
+    .through__miner__mineToMill__title{
+
+        h2{
+            font-size: 26px;
+            line-height: 31px;
+        }
+    }
+
+    .mineToMill__link__grid{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .through__miner__mineToMill{
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .through__miner__mineToMill__link{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 548px) {
+
+    .mineToMill__link__grid{
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .through__miner__title{
+
+        h1{
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+
+    .through__miner__mineToMill__title{
+
+        h2{
+            font-size: 26px;
+            line-height: 31px;
+        }
+    }
+
+    .mineToMill__link__grid{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mineToMill__link__grid svg{
+        width: 20px;
+    }
+
+    .through__miner__mineToMill{
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .through__miner__mineToMill__link{
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .mineToMill__link__grid {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+}
 /* through__miner end */
-
-
 
 /* dec__geomix */
 
 #dec__geomix{
-    background: url("../img/Group_2084F.png") no-repeat center / 100%;
-    height: 1389px;
-    padding-top: 1px;
-    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+#dec__geomix .dec__geomix__bg{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
 }
 
 .dec__geomix__digitalProduction{
@@ -6188,9 +6303,179 @@ hr.active {
     }
 }
 
-/*.dec__geomix__img{*/
-/*    width: 300px;*/
-/*}*/
+@media (max-width: 1000px) {
+    #dec__geomix .dec__geomix__bg {
+        bottom: 0%;
+        top: -7%;
+        height: 107%;
+        width: 100%;
+    }
+
+    .dec__geomix__digitalProduction {
+        margin-top: 120px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0.16px;
+        }
+    }
+
+    .dec__geomix__digitalProduction__text {
+        margin-top: 40px;
+
+        p {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 38.4px;
+            letter-spacing: 0.16px;
+        }
+    }
+
+    .dec__geomix__text__wrapper {
+        margin-top: 290px;
+    }
+
+    .dec__geomix__text__title {
+        h3 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0.16px;
+        }
+    }
+
+    .dec__geomix__text1 {
+        margin-top: 40px;
+        width: 70%;
+
+        p {
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 40px;
+            letter-spacing: 0.16px;
+        }
+    }
+
+    .dec__geomix__text2 {
+        margin-top: 40px;
+        width: 66%;
+
+        p {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 33.6px;
+            letter-spacing: 0.16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #dec__geomix .dec__geomix__bg {
+        bottom: 0%;
+        top: -10%;
+        height: 110%;
+        width: 110%;
+    }
+
+    .dec__geomix__digitalProduction {
+        margin-top: 100px;
+
+        h2 {
+            width: 67%;
+        }
+    }
+
+    .dec__geomix__digitalProduction__text {
+        margin-top: 40px;
+
+        p {
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+
+    .dec__geomix__text__wrapper {
+        margin-top: 298px;
+    }
+
+    .dec__geomix__text1 {
+        margin-top: 40px;
+        width: 84%;
+    }
+
+    .dec__geomix__text2 {
+        margin-top: 40px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #dec__geomix .dec__geomix__bg {
+        bottom: 0%;
+        top: -9%;
+        left: -56%;
+        height: 112%;
+        width: 163%;
+    }
+
+    .dec__geomix__digitalProduction {
+        margin-top: 80px;
+
+        h2 {
+            width: 89%;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .dec__geomix__digitalProduction__text {
+        margin-top: 40px;
+
+        p {
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+
+    .dec__geomix__text__wrapper {
+        margin-top: 273px;
+    }
+
+    .dec__geomix__text__title {
+        h3 {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .dec__geomix__text1 {
+        margin-top: 40px;
+        width: 96%;
+
+        p {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+    }
+
+    .dec__geomix__text2 {
+        margin-top: 40px;
+        width: 93%;
+
+        p {
+            font-size: 20px;
+            line-height: 21px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+
+}
 
 /* dec__geomix end */
 
@@ -6198,6 +6483,7 @@ hr.active {
 
 #solution__slider{
     background: #15161a;
+    padding-top: 10%;
 }
 
 .solution__slider__title{
