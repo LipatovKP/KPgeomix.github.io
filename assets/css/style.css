@@ -6407,14 +6407,175 @@ hr.active {
 /* implement__effect */
 
 #implement__effect{
+    position: relative;
+    z-index: 2;
     padding-top: 140px;
     background-color: #15161a;
 }
 
+#implement__effect .implement__bg{
+    position: absolute;
+    z-index: -1;
+    bottom: 37%;
+    height: 50%;
+    width: 100%;
+}
 
-/* implement__effect end */
+.implement__effect__title h2{
+    padding-bottom: 60px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+}
 
-/* achieving__efficiency */
+.implement__effect__min__title span{
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 61px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+}
+
+.implement__effect__head{
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 133px;
+    gap: 30px;
+}
+
+.implement__effect__head__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    width: 100%;
+    background: radial-gradient(109.67% 112.03% at 47.45% 0%, rgba(3, 6, 66, 0) 0%, #00327C 100%);
+    border: 2px solid #8CC5F133;
+    border-radius: 20px;
+
+    span{
+        font-size: 90px;
+        font-weight: 200;
+        line-height: 130px;
+        color: #FFFFFF;
+    }
+
+    p{
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 41px;
+        color: #FFFFFF;
+    }
+}
+
+.implement__effect__bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 30px;
+    width: 100%;
+    max-height: 541px;
+}
+
+.implement__effect__bottom__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px 15px;
+    width: 32%;
+    max-height: 200px;
+    background: linear-gradient(157.65deg, rgba(0, 0, 0, 0.1) 17.34%, rgba(44, 80, 140, 0.1) 153.86%);
+    border: 1px solid #FFFFFF33;
+    border-radius: 20px;
+
+    span{
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 87px;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+    }
+
+    p{
+        width: 90%;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+    }
+}
+
+.achieving__efficiency__bg{
+    background: url("../img/Vector_achieving_efficiency_wrapper.png") no-repeat right / 46%;
+}
+
+.achieving__efficiency__title{
+    padding-top: 218px;
+
+    h3{
+
+        width: 43%;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 61px;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+    }
+}
+
+.achieving__efficiency__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    gap: 40px;
+}
+
+.achieving__efficiency__wrapper__column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.achieving__efficiency__wrapper__item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #9EA1A3;
+
+
+    span{
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 87px;
+        letter-spacing: 0.32px;
+        color: #8CC5F1;
+    }
+
+    p{
+        width: 84%;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+    }
+}
+
+.achieving__efficiency__wrapper__item--bb{
+    border: none;
+}
 
 .achieving__efficiency__gallery__min{
     display: flex;
@@ -6435,7 +6596,7 @@ hr.active {
     width: 200px;
 }
 
-/* achieving__efficiency end */
+/* implement__effect end */
 
 .gradient__background {
     width: 100%;
