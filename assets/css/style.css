@@ -6416,9 +6416,10 @@ hr.active {
     #dec__geomix .dec__geomix__bg {
         bottom: 0%;
         top: -9%;
-        left: -56%;
-        height: 112%;
+        left: -46%;
         width: 163%;
+        height: 112%;
+        transform: scale(1);
     }
 
     .dec__geomix__digitalProduction {
@@ -6435,8 +6436,8 @@ hr.active {
         margin-top: 40px;
 
         p {
-            font-size: 26px;
-            line-height: 26px;
+            font-size: 25px;
+            line-height: 25px;
         }
     }
 
@@ -6474,7 +6475,37 @@ hr.active {
 }
 
 @media (max-width: 360px) {
+    #dec__geomix .dec__geomix__bg {
+        bottom: 0%;
+        top: -9%;
+        left: -46%;
+        width: 163%;
+        height: 112%;
+    }
 
+    .dec__geomix__digitalProduction {
+        margin-top: 99px;
+
+        h2 {
+            width: 71%;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .dec__geomix__text__wrapper {
+        margin-top: 273px;
+    }
+
+    .dec__geomix__text1 {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .dec__geomix__text2 {
+        margin-top: 40px;
+        width: 100%;
+    }
 }
 
 /* dec__geomix end */
