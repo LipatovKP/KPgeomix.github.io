@@ -556,7 +556,7 @@ const solutionSlider = () =>{
     const solutionSlider = new Swiper('.solution-slider', {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 35,
+        spaceBetween: 40,
         loop:false,
         pagination: {
             el: '.solution__slider__pagination',

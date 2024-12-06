@@ -6500,6 +6500,12 @@ hr.active {
     .dec__geomix__text1 {
         margin-top: 40px;
         width: 100%;
+
+        p {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
     }
 
     .dec__geomix__text2 {
@@ -6520,14 +6526,15 @@ hr.active {
 .solution__slider__title{
 
     h3{
-        font-size: 52px;
+        font-size: clamp(1.75rem, 1.375rem + 1.88vw, 3.25rem);
         font-weight: 500;
-        line-height: 62.4px;
+        line-height: clamp(1.75rem, 1.212rem + 2.69vw, 3.9rem);
         color: #FFFFFF;
     }
 }
 
 .solution__slider__container{
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -6614,7 +6621,7 @@ hr.active {
 }
 
 .solution__slider__vector svg{
-    width: 42px;
+    width: clamp(1.875rem, 1.688rem + 0.94vw, 2.625rem);
 }
 
 .solution__slider__logo {
@@ -6630,9 +6637,9 @@ hr.active {
     margin-bottom: 40px;
 
     span{
-        font-size: 36px;
+        font-size: clamp(1.063rem, 0.766rem + 1.48vw, 2.25rem);
         font-weight: 400;
-        line-height: 52px;
+        line-height: clamp(1.063rem, 0.516rem + 2.73vw, 3.25rem);
         letter-spacing: 0.02em;
         color: #FFFFFF;
 
@@ -6640,9 +6647,9 @@ hr.active {
 
     p{
         margin-top: 10px;
-        font-size: 20px;
+        font-size: clamp(1.063rem, 1.016rem + 0.23vw, 1.25rem);
         font-weight: 400;
-        line-height: 28px;
+        line-height: clamp(1.625rem, 1.594rem + 0.16vw, 1.75rem);
         letter-spacing: 0.02em;
         color: #FFFFFF;
     }
@@ -6669,6 +6676,143 @@ hr.active {
 
 .solution__slider__pagination.swiper-pagination .swiper-pagination-bullet-active{
    background-color: #FFFFFF;
+}
+
+
+@media (max-width: 1341px) {
+    .solution__slider__container{
+        min-height: 1000px;
+        padding: 60px 0 0 0;
+        background: url(../img/Vector_decisions.png) no-repeat center / 96%;
+    }
+
+    .solution__slider__left,
+    .solution__slider__right{
+        position: absolute;
+        transition: all 0.5s ease;
+        transform: scale(0.8);
+    }
+
+    .solution__slider__right{
+        top: -4%;
+        right: 0;
+        left: 66%;
+        bottom: 0;
+        width: 37%;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .solution__slider__left{
+        top: -4%;
+        right: 0;
+        left: -3%;
+        bottom: 0;
+        width: 37%;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .solution__slider__center{
+        position: absolute;
+        transform: scale(1);
+        transition: 0.5s;
+        z-index: 1;
+        top: 0%;
+        right: 0;
+        left: 28%;
+        bottom: 0;
+        width: 35%;
+        height: 53%;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .solution__slider__left{
+        top: -4%;
+        right: 0;
+        left: -3%;
+        bottom: 0;
+        width: 39.2%;
+        height: 110%;
+    }
+
+    .solution__slider__center{
+        top: 0%;
+        right: 0;
+        left: 26.5%;
+        bottom: 0;
+        width: 39.48%;
+        height: 53%;
+    }
+
+    .solution__slider__right{
+        top: -4%;
+        right: 0;
+        left: 66%;
+        bottom: 0;
+        width: 39.2%;
+        height: 110%;
+    }
+
+}
+
+@media (max-width: 771px) {
+
+    .solution__slider__container{
+        position: static;
+        flex-direction: column;
+        gap: 20px;
+        background: url(../img/Vector_decisions.png) no-repeat top center / 118%;
+    }
+
+    .solution__slider__left,
+    .solution__slider__right,
+    .solution__slider__center{
+        position: static;
+        transform: scale(1);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .solution__slider__center{
+        margin: auto;
+    }
+
+    .solution__slider__left, .solution__slider__right {
+        flex-direction: row;
+    }
+
+    .solution__slider__left__slide,
+    .solution__slider__right__slide,
+    .solution__slider__center__slide{
+        gap: 30px;
+    }
+
+    .solution__slider__center--ord{
+        order: -1;
+        width: 54%;
+    }
+
+    .solution__slider__pagination.swiper-pagination{
+        bottom: 2%;
+    }
+}
+
+@media (max-width: 523px) {
+    .solution__slider__container{
+        padding: 40px 0 0 0;
+    }
+
+    .solution__slider__left, .solution__slider__right {
+        flex-direction: column;
+    }
+
+    .solution__slider__center--ord{
+        order: -1;
+        width: 100%;
+    }
 }
 
 /* solution__slider end */
