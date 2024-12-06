@@ -6819,9 +6819,9 @@ hr.active {
 
 /* get__info__form */
 
+
+
 /* get__info__form end */
-
-
 
 /* bottom__geomix */
 
@@ -7222,7 +7222,10 @@ hr.active {
     }
 }
 
-
+.form__column.right.form__column--get__form form input:nth-child(5){
+    width: 48.3%;
+    margin-right: 19%;
+}
 
 .form__column--black.left span{
     color: black;
@@ -7330,6 +7333,17 @@ hr.active {
     padding: 12px 48px;
 }
 
+/*.form__column.right.custom-file-label--get__info form{*/
+/*    position: relative;*/
+/*}*/
+
+/*.vector__bottom{*/
+/*    position: absolute;*/
+/*    top: 51%;*/
+/*    left: 73%;*/
+/*}*/
+
+
 .file-name {
     margin-left: 10px;
 }
@@ -7367,11 +7381,11 @@ hr.active {
 }
 
 .form__btn .btn button {
-        border: none;
+    border: none;
     outline: none;
     background-color: transparent;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     font-weight: 300;
     line-height: 26px;
     cursor: pointer;
@@ -7414,6 +7428,19 @@ hr.active {
     right: 0;
     left: 0;
 }
+
+/*@media (max-width: 1656px) {*/
+/*    .vector__bottom{*/
+/*        top: 51%;*/
+/*        left: 62%;*/
+/*    }*/
+
+/*    .form__column.right.form__column--get__form form input:nth-child(5) {*/
+/*        width: 48.3%;*/
+/*        margin-right: 19%;*/
+/*    }*/
+
+/*}*/
 
 @media (max-width: 1400px) {
     .form__wrapper {
@@ -7459,7 +7486,17 @@ hr.active {
         top: -139px;
         margin-bottom: -193px;
     }
+
+    .form__column.right.form__column--get__form form input:nth-child(5) {
+        width: 94%;
+        margin-right: 0;
+    }
+
+    .form__btn.btn--get__info{
+        margin-left: 0%;
+    }
 }
+
 
 @media (max-width: 930px) {
     .form__btn {
