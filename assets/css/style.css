@@ -6803,6 +6803,7 @@ hr.active {
 @media (max-width: 523px) {
     .solution__slider__container{
         padding: 40px 0 0 0;
+        background: url(../img/Vector_decisions.png) no-repeat left / 171%;
     }
 
     .solution__slider__left, .solution__slider__right {
@@ -6810,7 +6811,6 @@ hr.active {
     }
 
     .solution__slider__center--ord{
-        order: -1;
         width: 100%;
     }
 }
