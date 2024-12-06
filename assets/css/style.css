@@ -6961,17 +6961,17 @@ hr.active {
 
 .implement__effect__title h2{
     padding-bottom: 60px;
-    font-size: 48px;
+    font-size: clamp(2rem, 1.75rem + 1.25vw, 3rem);
     font-weight: 600;
-    line-height: 48px;
+    line-height: clamp(2rem, 1.75rem + 1.25vw, 3rem);
     letter-spacing: 0.16px;
     color: #FFFFFF;
 }
 
 .implement__effect__min__title span{
-    font-size: 42px;
+    font-size: clamp(1.625rem, 1.281rem + 1.72vw, 3rem);
     font-weight: 300;
-    line-height: 61px;
+    line-height: clamp(1.625rem, 1.078rem + 2.73vw, 3.813rem);
     letter-spacing: 0.32px;
     color: #FFFFFF;
 }
@@ -7118,6 +7118,312 @@ hr.active {
 
 .achieving__efficiency__wrapper__item--bb{
     border: none;
+}
+
+@media (max-width: 1532px){
+    #implement__effect .implement__bg {
+        bottom: 31%;
+        height: 37%;
+        width: 100%;
+    }
+    .implement__effect__head {
+        max-height: 181px;
+    }
+
+    .implement__effect__bottom{
+        justify-content: center;
+    }
+
+    .implement__effect__bottom__item {
+        width: 31%;
+    }
+
+    .implement__effect__head__item {
+        flex-direction: column;
+        padding: 20px;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0;
+
+        p {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        span {
+            font-size: 90px;
+            line-height: 79px;
+        }
+    }
+
+    .implement__effect__bottom__item {
+
+
+        span {
+            font-size: 48px;
+            line-height: 69px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .achieving__efficiency__title {
+        h3 {
+            width: 75%;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .achieving__efficiency__wrapper__item {
+        span {
+            font-size: 48px;
+            font-weight: 200;
+            line-height: 69px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+        }
+    }
+
+    .achieving__efficiency__wrapper__item__text{
+        p {
+            width: 68%;
+
+        }
+    }
+
+}
+
+@media (max-width: 888px){
+
+    #implement__effect .implement__bg {
+        bottom: 25%;
+        height: 33%;
+        width: 100%;
+    }
+    .implement__effect__head {
+        max-height: 181px;
+    }
+
+    .implement__effect__bottom {
+        justify-content: normal;
+    }
+
+    .implement__effect__head__item {
+        flex-direction: column;
+        padding: 20px;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0;
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        span {
+            font-size: 90px;
+            line-height: 79px;
+        }
+    }
+
+    .implement__effect__bottom__item {
+        width: 47%;
+
+        span {
+            font-size: 38px;
+            line-height: 54px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .achieving__efficiency__title {
+        padding-top: 330px;
+    }
+
+
+    .achieving__efficiency__title {
+        h3 {
+            width: 75%;
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+
+    .achieving__efficiency__wrapper__item {
+        span {
+            font-size: 38px;
+            font-weight: 200;
+            line-height: 54px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    .achieving__efficiency__wrapper__item__text{
+        p {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    .achieving__efficiency__wrapper__item__text{
+        p {
+            width: 71%;
+
+        }
+    }
+
+    .achieving__efficiency__wrapper__item__text1{
+        p {
+            width: 100%;
+
+        }
+    }
+
+    .achieving__efficiency__wrapper__item {
+        p {
+            width: 92%;
+        }
+    }
+}
+
+@media (max-width: 531px) {
+    #implement__effect .implement__bg {
+        bottom: 41%;
+        height: 16%;
+        width: 100%;
+    }
+
+    .achieving__efficiency__title {
+        h3 {
+            width: 87%;
+        }
+    }
+
+    .implement__effect__head {
+        flex-direction: column;
+        max-height: 363px;
+    }
+
+    .implement__effect__bottom {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 25px;
+        gap: 10px;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .implement__effect__bottom__item {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+
+        p {
+            width: 63%;
+        }
+    }
+
+    .achieving__efficiency__title {
+        padding-top: 60px;
+    }
+
+    .implement__effect__head__item {
+        span {
+            font-size: 50px;
+            line-height: 72px;
+        }
+    }
+
+    .achieving__efficiency__wrapper{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .achieving__efficiency__wrapper__column{
+        width: 100%;
+    }
+
+    .achieving__efficiency__wrapper__item--bb{
+        border-bottom: 1px solid #9EA1A3;
+    }
+
+    .achieving__efficiency__wrapper__item__text{
+        p {
+            width: 100%;
+
+        }
+    }
+
+    .achieving__efficiency__wrapper__item {
+        p {
+            width: 100%;
+        }
+    }
+
+}
+@media (max-width: 368px){
+
+    #implement__effect .implement__bg {
+        bottom: 52%;
+        height: 11%;
+        width: 100%;
+    }
+
+    .achieving__efficiency__title {
+        h3 {
+            width: 100%;
+        }
+    }
+
+    .implement__effect__head__item {
+        padding: 10px;
+    }
+
+    .implement__effect__head {
+        gap: 20px;
+    }
+
+    .implement__effect__bottom__item {
+        p {
+            width: 69%;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 18px;
+        }
+
+        span {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
 }
 
 /* implement__effect end */
