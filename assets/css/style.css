@@ -7307,7 +7307,7 @@ hr.active {
 
 @media (max-width: 531px) {
     #implement__effect .implement__bg {
-        bottom: 41%;
+        bottom: 42%;
         height: 16%;
         width: 100%;
     }
@@ -7388,6 +7388,13 @@ hr.active {
         bottom: 52%;
         height: 11%;
         width: 100%;
+    }
+
+    #implement__effect .achieving__efficiency__bg{
+        bottom: 23%;
+        height: 22%;
+        width: 80%;
+        right: 0;
     }
 
     .achieving__efficiency__title {
@@ -7876,6 +7883,12 @@ hr.active {
 
 .form__btn .btn--get__info{
     width: 360px;
+}
+
+@media (max-width: 360px) {
+    .form__btn .btn--get__info{
+        width: 100%;
+    }
 }
 
 .form__btn .btn:hover img{
