@@ -6120,6 +6120,7 @@ hr.active {
 }
 
 .mineToMill__img{
+    display: flex;
     margin-right: 10px;
 }
 
