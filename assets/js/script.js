@@ -150,7 +150,7 @@ const consultationSwiper = () => {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
             },
-            360: {
+            310: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
             },
@@ -190,7 +190,7 @@ const consultationSwiperIntegration = new Swiper('.consultation-swiper-integrati
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
-        360: {
+        310: {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
@@ -230,7 +230,7 @@ const consultationSwiperEconomy = new Swiper('.consultation-swiper-economy', {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
-        360: {
+        310: {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },

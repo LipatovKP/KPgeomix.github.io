@@ -1000,6 +1000,7 @@ hr.active {
 
 .decisions__wrapper__slider .decisions__wrapper {
     align-items: center;
+    height: 40%;
 }
 
 .decisions__wrapper__slider .swiper-pagination {
@@ -2383,14 +2384,22 @@ hr.active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .ggis__column {
+    position: relative;
     width: 50%;
 }
 
-.ggis__img img{
-    margin-top: -303px;
+.ggis__img__pos{
+    position: absolute;
+    top: -42%;
+    bottom: 0;
+    left: -1%;
+    right: 0;
+    height: 123%;
+    width: 101%;
 }
 
 .ggis__row {
@@ -4913,6 +4922,11 @@ hr.active {
 /*    transition: 0.5s;*/
 /*}*/
 
+.team__slider__wrapper.swiper-wrapper{
+    height: 87%;
+}
+
+
 .team__slide_head{
     display: flex;
     justify-content: space-between;
@@ -5348,9 +5362,10 @@ hr.active {
 }
 
 .bg__history__development--bg{
-    background: url(../img/Rectangle__I.png) no-repeat right / 31.5%;
+    background: url("../img/Rectangle__I.png") no-repeat right / 31.5%;
     position: relative;
-    top: -12px;
+    top: -8px;
+    height: 187%;
     z-index: 2;
 }
 
@@ -6108,6 +6123,12 @@ hr.active {
     margin-right: 10px;
 }
 
+.mineToMill__img img{
+    object-fit: fill;
+    max-width: 50px;
+    max-height: 50px;
+}
+
 @media (max-width: 1000px) {
     .through__miner__title{
 
@@ -6538,7 +6559,7 @@ hr.active {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     padding: 60px;
     background: url("../img/Vector_decisions.png") no-repeat center / 66%;
 }
@@ -7659,10 +7680,6 @@ hr.active {
 /* decisions__gallery end */
 
 .gradient__background {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto;
     background: linear-gradient(180deg, #FFFFFF 46.02%, #4E79CA 62.06%, #00327C 76.85%, #091823 97.88%, #14161A 100%);
     padding: 50px 0;
 }
@@ -7692,6 +7709,15 @@ hr.active {
     height: 100%;
     margin-bottom: -757px;
 }
+
+/*.form__about { Битрикс с этими параметрами*/
+/*    position: relative;*/
+/*    z-index: -1;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    height: 100%;*/
+/*}*/
 
 .form__wrapper {
     padding: 140px 0 0 0;
